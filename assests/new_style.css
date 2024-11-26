@@ -1,33 +1,36 @@
 /* Body Styling */
 body {
-    background: linear-gradient(45deg, #f9f9f9, #d4e1f0);
+    background: linear-gradient(45deg, #ff9a8b, #ff6a00, #d4a5a5, #61a0a8, #6a9a8d);
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
-    line-height: 1.6;
-    animation: pageLoad 1s ease-out;
+    line-height: 1.8;
+    background-size: 400% 400%;
+    animation: gradientBG 5s ease infinite;
 }
 
 /* Header Styling */
 header {
-    background: radial-gradient(circle, #ff6f61, #f99d7e);
+    background: linear-gradient(45deg, #ff61a6, #f3a2a7, #f1e1ff, #92a6ea, #62f1e2);
     color: white;
     text-align: center;
     padding: 4em 0;
     margin-bottom: 3em;
     border-bottom: 5px solid #ffffff;
+    border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
     animation: slideInHeader 1s ease-out;
 }
 
 h1 {
-    font-size: 3.5em;
+    font-size: 3.8em;
     margin: 0;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    color: #fffcf9;
+    animation: colorChange 4s infinite alternate;
 }
 
 /* Main Section Layout */
@@ -43,14 +46,164 @@ main {
 
 /* Team Member Card Styling */
 .team-member {
-    background: linear-gradient(45deg, #e2f2f7, #b7e5e8);
-    border-radius: 15px;
-    padding: 25px;
-    border: 2px solid #c6e3e8;
+    background: linear-gradient(135deg, #f9b4d3, #e0b0ff, #a6e3e9, #b6e2d3, #ffecb3);
+    border-radius: 20px;
+    padding: 30px;
+    border: 2px solid #ffffff;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease, background 0.4s ease;
     animation: popIn 0.7s ease-out;
 }
 
 .team-member:hover {
-    transform
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #ff61a6, #f3a2a7, #f1e1ff);
+    cursor: pointer;
+}
+
+/* Header for Each Team Member */
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 1.5em;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+/* Use Case Headers Styling */
+h3 {
+    font-size: 1.5em;
+    color: #6f4f37;
+    margin-bottom: 1em;
+    position: relative;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/* Paragraph Text Styling */
+p {
+    font-size: 1.1em;
+    color: #444;
+    line-height: 1.6;
+    margin: 0;
+    transition: color 0.4s ease, transform 0.4s ease, letter-spacing 0.4s ease;
+}
+
+p:hover {
+    color: #ff5e5e;
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+footer {
+    background: linear-gradient(45deg, #ff9a8b, #ff61a6, #ffecb3);
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+    margin-top: 3em;
+    border-radius: 20px;
+    animation: fadeInFooter 1s ease-out;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+/* Hover Effects on Links */
+a {
+    color: #ff61a6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #ffecb3;
+    transform: translateX(5px);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Animations for Page Interactivity */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes slideInHeader {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes popIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes colorChange {
+    0% { color: #ff61a6; }
+    25% { color: #f3a2a7; }
+    50% { color: #92a6ea; }
+    75% { color: #f1e1ff; }
+    100% { color: #ff61a6; }
+}
+
+@keyframes fadeInContent {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInFooter {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-gap: 2em;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+}
