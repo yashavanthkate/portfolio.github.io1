@@ -1,100 +1,56 @@
-/* Basic Body Styling */
+/* Body Styling */
 body {
-    background: linear-gradient(135deg, #f9f9f9, #e0eafc);
-    font-family: 'Verdana', sans-serif;
+    background: linear-gradient(45deg, #f9f9f9, #d4e1f0);
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.7;
-    color: #444;
-    animation: fadeIn 1s ease-out;
+    color: #333;
+    line-height: 1.6;
+    animation: pageLoad 1s ease-out;
 }
 
 /* Header Styling */
 header {
-    background: linear-gradient(45deg, #0066cc, #00b4d8);
+    background: radial-gradient(circle, #ff6f61, #f99d7e);
     color: white;
     text-align: center;
     padding: 4em 0;
     margin-bottom: 3em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    animation: slideIn 1s ease-out;
+    animation: slideInHeader 1s ease-out;
 }
 
-/* Header Text Styling */
 h1 {
     font-size: 3.5em;
     margin: 0;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
 }
 
-/* Main Section Styling */
+/* Main Section Layout */
 main {
-    padding: 3em;
+    padding: 2em;
     display: grid;
     gap: 2em;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-column-gap: 1.5em;
-    animation: fadeInUp 1.2s ease-out;
+    grid-column-gap: 1em;
+    animation: fadeInContent 1.2s ease-out;
 }
 
-/* Team Member Section Styling */
+/* Team Member Card Styling */
 .team-member {
-    background-color: #ffffff;
-    padding: 25px;
+    background: linear-gradient(45deg, #e2f2f7, #b7e5e8);
     border-radius: 15px;
-    border: 1px solid #ddd;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.4s ease-in-out, box-shadow 0.3s ease;
-    background: linear-gradient(45deg, #f0f8ff, #e6f7ff);
-    animation: popIn 0.6s ease-out;
+    padding: 25px;
+    border: 2px solid #c6e3e8;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    animation: popIn 0.7s ease-out;
 }
 
 .team-member:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    background-color: #e6f7ff;
-    animation: hoverEffect 0.3s ease;
-}
-
-/* Team Member Headers */
-h2 {
-    color: #0066cc;
-    font-size: 1.8em;
-    margin-bottom: 1em;
-    text-transform: capitalize;
-    text-align: center;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Use Case Headers */
-h3 {
-    font-size: 1.4em;
-    color: #333;
-    margin-bottom: 0.6em;
-    text-decoration: underline;
-    position: relative;
-    z-index: 1;
-}
-
-/* Paragraph Styling */
-p {
-    font-size: 1.1em;
-    color: #555;
-    line-height: 1.6;
-    margin: 0;
-    transition: color 0.4s ease;
-}
-
-/* Footer Styling */
-footer {
-    background: #0066cc;
-    color: white;
-    text-align: center;
-    padding: 1.5em 0;
-    margin-top: 3em;
-    border-radius: 12px;
-    animation: fadeIn 1
+    transform
