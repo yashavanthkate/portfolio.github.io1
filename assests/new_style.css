@@ -1,36 +1,37 @@
 /* Body Styling */
 body {
-    background: linear-gradient(45deg, #ff9a8b, #ff6a00, #d4a5a5, #61a0a8, #6a9a8d);
+    background: linear-gradient(135deg, #f6c6ea, #d6eaf8, #d9f7d6, #f1e2cc);
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #444;
     line-height: 1.8;
-    background-size: 400% 400%;
-    animation: gradientBG 5s ease infinite;
+    background-size: 100% 100%;
 }
 
 /* Header Styling */
 header {
-    background: linear-gradient(45deg, #ff61a6, #f3a2a7, #f1e1ff, #92a6ea, #62f1e2);
+    background: #f4a6d7;
     color: white;
     text-align: center;
-    padding: 4em 0;
+    padding: 3em 0;
     margin-bottom: 3em;
-    border-bottom: 5px solid #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    animation: slideInHeader 1s ease-out;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    font-size: 3.8em;
+    font-size: 3.5em;
     margin: 0;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-    color: #fffcf9;
-    animation: colorChange 4s infinite alternate;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: color 0.4s ease;
+}
+
+h1:hover {
+    color: #ffe6f3;
 }
 
 /* Main Section Layout */
@@ -41,129 +42,78 @@ main {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-column-gap: 1em;
-    animation: fadeInContent 1.2s ease-out;
 }
 
 /* Team Member Card Styling */
 .team-member {
-    background: linear-gradient(135deg, #f9b4d3, #e0b0ff, #a6e3e9, #b6e2d3, #ffecb3);
-    border-radius: 20px;
-    padding: 30px;
-    border: 2px solid #ffffff;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease, background 0.4s ease;
-    animation: popIn 0.7s ease-out;
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #e3e3e3;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .team-member:hover {
-    transform: scale(1.05);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-    background: linear-gradient(135deg, #ff61a6, #f3a2a7, #f1e1ff);
-    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Header for Each Team Member */
 h2 {
     font-size: 1.8em;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
     text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1.5px;
+    color: #6c5b7b;
+    text-transform: capitalize;
 }
 
 /* Use Case Headers Styling */
 h3 {
-    font-size: 1.5em;
-    color: #6f4f37;
-    margin-bottom: 1em;
-    position: relative;
-    font-weight: 700;
+    font-size: 1.4em;
+    color: #7f8c8d;
+    margin-bottom: 0.8em;
+    font-weight: 600;
     text-decoration: underline;
 }
 
 /* Paragraph Text Styling */
 p {
     font-size: 1.1em;
-    color: #444;
+    color: #555;
     line-height: 1.6;
     margin: 0;
-    transition: color 0.4s ease, transform 0.4s ease, letter-spacing 0.4s ease;
-}
-
-p:hover {
-    color: #ff5e5e;
-    transform: scale(1.05);
 }
 
 /* Footer Styling */
 footer {
-    background: linear-gradient(45deg, #ff9a8b, #ff61a6, #ffecb3);
+    background: #f4a6d7;
     color: white;
     text-align: center;
-    padding: 2em 0;
+    padding: 1.5em 0;
     margin-top: 3em;
-    border-radius: 20px;
-    animation: fadeInFooter 1s ease-out;
+    border-radius: 12px;
 }
 
 footer p {
     margin: 0;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 /* Hover Effects on Links */
 a {
-    color: #ff61a6;
+    color: #f4a6d7;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 a:hover {
-    color: #ffecb3;
-    transform: translateX(5px);
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    color: #f1c0d7;
+    transform: translateX(3px);
 }
 
-/* Animations for Page Interactivity */
-@keyframes gradientBG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-@keyframes slideInHeader {
-    from {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes popIn {
-    from {
-        opacity: 0;
-        transform: scale(0.8);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-@keyframes colorChange {
-    0% { color: #ff61a6; }
-    25% { color: #f3a2a7; }
-    50% { color: #92a6ea; }
-    75% { color: #f1e1ff; }
-    100% { color: #ff61a6; }
-}
-
+/* Animations for Content Fade In */
 @keyframes fadeInContent {
     from {
         opacity: 0;
@@ -188,7 +138,7 @@ a:hover {
 @media (max-width: 768px) {
     main {
         grid-template-columns: 1fr;
-        grid-gap: 2em;
+        grid-gap: 1.5em;
     }
 
     h1 {
@@ -200,7 +150,7 @@ a:hover {
     }
 
     h3 {
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 
     footer p {
