@@ -6,24 +6,24 @@
         font-family: 'Poppins', sans-serif;
         margin: 0;
         padding: 0;
-        background: linear-gradient(to bottom, #f0f8ff, #faebd7);
+        background: linear-gradient(to bottom, #e3f2fd, #fbe9e7);
         color: #333;
       }
 
       header {
         text-align: center;
-        padding: 20px;
-        background: linear-gradient(135deg, #ff7eb3, #ff758c);
+        padding: 20px 10px;
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
         color: white;
         font-size: 2rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         font-weight: bold;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
       }
 
       .container {
         max-width: 900px;
-        margin: 30px auto;
+        margin: 20px auto;
         padding: 20px;
         display: flex;
         flex-direction: column;
@@ -31,24 +31,31 @@
       }
 
       .section {
-        border-radius: 15px;
+        border-radius: 12px;
         padding: 20px;
-        background: #fff;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
       }
 
       .section:hover {
         transform: translateY(-8px);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        background: linear-gradient(135deg, #ff758c, #f0c27b);
-        color: white;
+        background: #ffe6e6;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
         cursor: pointer;
       }
 
-      .section h3 {
+      .data-structures:hover {
+        border-left: 5px solid #ff9800;
+      }
+
+      .algorithms:hover {
+        border-left: 5px solid #4caf50;
+      }
+
+      h3 {
         margin-top: 0;
-        color: inherit;
+        font-size: 1.5rem;
+        color: #333;
       }
 
       ul {
@@ -57,44 +64,44 @@
       }
 
       li {
-        margin: 10px 0;
+        margin: 8px 0;
         padding-left: 25px;
         position: relative;
       }
 
       li:before {
-        content: "☼"; /* Adorable sun-like icon for bullet points */
-        color: #ff7eb3;
+        content: "✔";
+        color: #6a11cb;
         font-size: 18px;
         position: absolute;
         left: 0;
         top: 0;
-        transition: color 0.4s ease;
+        transition: color 0.3s ease;
       }
 
       .section:hover li:before {
-        color: white;
+        color: #2575fc;
       }
 
       footer {
         text-align: center;
-        padding: 15px;
-        background: linear-gradient(135deg, #ff758c, #ff7eb3);
+        padding: 15px 10px;
+        background: #2575fc;
         color: white;
         font-size: 0.9rem;
         margin-top: 20px;
-        box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
       }
     </style>
   </head>
   <body>
     <header>
-      Data Structures and Algorithms – Interactive Learning
+      Data Structures and Algorithms – Fantasy Learning
     </header>
 
     <div class="container">
-      <!-- Section 1 -->
-      <div class="section">
+      <!-- Data Structures Section -->
+      <div class="section data-structures">
         <h3>What kind of Data Structures have you studied?</h3>
         <ul>
           <li>Arrays (like lists of items)</li>
@@ -106,8 +113,8 @@
         </ul>
       </div>
 
-      <!-- Section 2 -->
-      <div class="section">
+      <!-- Algorithms Section -->
+      <div class="section algorithms">
         <h3>What kind of Algorithms have you studied?</h3>
         <ul>
           <li>Sorting and Searching: Organizing data (e.g., sorting numbers) or quickly finding items (e.g., a name in a contact list).</li>
@@ -118,7 +125,7 @@
     </div>
 
     <footer>
-      © 2024 Data Structures and Algorithms Course. Learn smart, think smarter!
+      © 2024 Data Structures and Algorithms Course. All rights reserved.
     </footer>
   </body>
 </html>
