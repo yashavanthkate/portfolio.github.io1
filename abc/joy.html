@@ -1,29 +1,112 @@
 <!DOCTYPE html>
 <html>
   <head>
-  
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background: #f7f9fc;
+        color: #333;
+      }
+      header {
+        background: #4CAF50;
+        color: #fff;
+        padding: 10px 20px;
+        text-align: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      h3 {
+        color: #4CAF50;
+        margin-bottom: 10px;
+      }
+      p {
+        margin: 0 0 15px 0;
+        padding: 0;
+      }
+      .content {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      li {
+        margin-bottom: 8px;
+        padding-left: 25px;
+        position: relative;
+      }
+      li:before {
+        content: "•";
+        color: #4CAF50;
+        font-size: 18px;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      footer {
+        text-align: center;
+        background: #4CAF50;
+        color: #fff;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
   </head>
   <body>
-<h3>Home Page – Course Introduction</h3>
-<p>Welcome to the world of Data Structures and Algorithms (DSA)! This course is all about learning how to organize and process data effectively to solve problems faster and smarter.</p>
+    <header>
+      <h1>Data Structures and Algorithms</h1>
+    </header>
 
-<h3>What is the course about?</h3>
-<p>This course teaches us how to store and manage data (data structures) and how to create step-by-step methods (algorithms) to solve different problems. It’s the foundation of computer programming and is used in almost every software and app you can think of.</p>
-    <h3>What kind of data structures and algorithms have you studied?</h3>
-    
-  <p>Data Structures</p>
-    <p>&bull; &nbsp; Arrays (like lists of items), Stacks (like a stack of plates), Queues (like a line of people), and Linked Lists (like a chain).</p>
-    <p>&bull; &nbsp; Advanced ones like Trees (family trees) and Graphs (maps with points and connections).</p>
-  <p>Algorithms</p>
+    <div class="content">
+      <h3>Home Page – Course Introduction</h3>
+      <p>
+        Welcome to the world of Data Structures and Algorithms (DSA)! This
+        course is all about learning how to organize and process data
+        effectively to solve problems faster and smarter.
+      </p>
 
-  <p>&bull; &nbsp; Sorting and Searching: How to organize data (like sorting numbers) or quickly find what you need (like finding a name in a contact list).</p>
-  <p>&bull; &nbsp; Pathfinding: Finding the shortest route, like Google Maps does.</p>
-  <p>&bull; &nbsp; Optimization: Solving problems by making the best choices, like packing a bag with maximum items but limited space.</p>
+      <h3>What is the course about?</h3>
+      <p>
+        This course teaches us how to store and manage data (data structures)
+        and how to create step-by-step methods (algorithms) to solve different
+        problems. It’s the foundation of computer programming and is used in
+        almost every software and app you can think of.
+      </p>
 
-  <h3>How do you connect the course with real time applications?</h3>
-  <p>&bull; &nbsp; Search engines use algorithms to show results quickly when you search for something.</p>
-  <p>&bull; &nbsp; Social media apps use graphs to recommend friends or connections.</p>
-  <p>&bull; &nbsp; GPS systems use algorithms to find the shortest route to your destination.</p>
-  <p>&bull; &nbsp; Even basic things like undo and redo in apps use stacks!</p>
+      <h3>What kind of data structures and algorithms have you studied?</h3>
+      <h4>Data Structures</h4>
+      <ul>
+        <li>Arrays (like lists of items), Stacks (like a stack of plates), Queues (like a line of people), and Linked Lists (like a chain).</li>
+        <li>Advanced ones like Trees (family trees) and Graphs (maps with points and connections).</li>
+      </ul>
+
+      <h4>Algorithms</h4>
+      <ul>
+        <li>Sorting and Searching: How to organize data (like sorting numbers) or quickly find what you need (like finding a name in a contact list).</li>
+        <li>Pathfinding: Finding the shortest route, like Google Maps does.</li>
+        <li>Optimization: Solving problems by making the best choices, like packing a bag with maximum items but limited space.</li>
+      </ul>
+
+      <h3>How do you connect the course with real-time applications?</h3>
+      <ul>
+        <li>Search engines use algorithms to show results quickly when you search for something.</li>
+        <li>Social media apps use graphs to recommend friends or connections.</li>
+        <li>GPS systems use algorithms to find the shortest route to your destination.</li>
+        <li>Even basic things like undo and redo in apps use stacks!</li>
+      </ul>
+    </div>
+
+    <footer>
+      <p>© 2024 Data Structures and Algorithms Course</p>
+    </footer>
   </body>
 </html>
