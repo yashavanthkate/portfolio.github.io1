@@ -39,23 +39,29 @@
 
       .section:hover {
         transform: translateY(-8px);
-        background: #ffe6e6;
+        background: #ffecd2;
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
         cursor: pointer;
       }
 
-      .data-structures:hover {
-        border-left: 5px solid #ff9800;
+      .light {
+        background: #fff;
       }
 
-      .algorithms:hover {
-        border-left: 5px solid #4caf50;
+      .dark {
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+        color: #fff;
       }
 
       h3 {
         margin-top: 0;
         font-size: 1.5rem;
-        color: #333;
+        color: inherit;
+      }
+
+      p,
+      ul {
+        margin: 10px 0;
       }
 
       ul {
@@ -65,22 +71,17 @@
 
       li {
         margin: 8px 0;
-        padding-left: 25px;
+        padding-left: 20px;
         position: relative;
       }
 
       li:before {
-        content: "✔";
-        color: #6a11cb;
+        content: "★";
+        color: #ff9800;
         font-size: 18px;
         position: absolute;
         left: 0;
         top: 0;
-        transition: color 0.3s ease;
-      }
-
-      .section:hover li:before {
-        color: #2575fc;
       }
 
       footer {
@@ -100,26 +101,48 @@
     </header>
 
     <div class="container">
-      <!-- Data Structures Section -->
-      <div class="section data-structures">
-        <h3>What kind of Data Structures have you studied?</h3>
+      <div class="section light">
+        <h3>Home Page – Course Introduction</h3>
+        <p>
+          Welcome to the world of Data Structures and Algorithms (DSA)! This
+          course is all about learning how to organize and process data
+          effectively to solve problems faster and smarter.
+        </p>
+      </div>
+
+      <div class="section dark">
+        <h3>What is the course about?</h3>
+        <p>
+          This course teaches us how to store and manage data (data structures)
+          and how to create step-by-step methods (algorithms) to solve different
+          problems. It’s the foundation of computer programming and is used in
+          almost every software and app you can think of.
+        </p>
+      </div>
+
+      <div class="section light">
+        <h3>What kind of data structures and algorithms have you studied?</h3>
+        <h4>Data Structures</h4>
         <ul>
-          <li>Arrays (like lists of items)</li>
-          <li>Stacks (like a stack of plates)</li>
-          <li>Queues (like a line of people)</li>
-          <li>Linked Lists (like a chain)</li>
-          <li>Advanced ones like Trees (family trees)</li>
-          <li>Graphs (maps with points and connections)</li>
+          <li>Arrays (like lists of items), Stacks (like a stack of plates), Queues (like a line of people), and Linked Lists (like a chain).</li>
+          <li>Advanced ones like Trees (family trees) and Graphs (maps with points and connections).</li>
+        </ul>
+
+        <h4>Algorithms</h4>
+        <ul>
+          <li>Sorting and Searching: How to organize data (like sorting numbers) or quickly find what you need (like finding a name in a contact list).</li>
+          <li>Pathfinding: Finding the shortest route, like Google Maps does.</li>
+          <li>Optimization: Solving problems by making the best choices, like packing a bag with maximum items but limited space.</li>
         </ul>
       </div>
 
-      <!-- Algorithms Section -->
-      <div class="section algorithms">
-        <h3>What kind of Algorithms have you studied?</h3>
+      <div class="section dark">
+        <h3>How do you connect the course with real-time applications?</h3>
         <ul>
-          <li>Sorting and Searching: Organizing data (e.g., sorting numbers) or quickly finding items (e.g., a name in a contact list).</li>
-          <li>Pathfinding: Finding the shortest route, like Google Maps.</li>
-          <li>Optimization: Making the best choices, like packing a bag efficiently with limited space.</li>
+          <li>Search engines use algorithms to show results quickly when you search for something.</li>
+          <li>Social media apps use graphs to recommend friends or connections.</li>
+          <li>GPS systems use algorithms to find the shortest route to your destination.</li>
+          <li>Even basic things like undo and redo in apps use stacks!</li>
         </ul>
       </div>
     </div>
@@ -129,3 +152,4 @@
     </footer>
   </body>
 </html>
+
