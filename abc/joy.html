@@ -30,11 +30,22 @@
         gap: 20px;
       }
 
+      /* Add animation keyframe for rotation */
+      @keyframes rotate360 {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
       .section {
         border-radius: 12px;
         padding: 20px;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+        animation: rotate360 1s linear infinite; /* Apply the rotating animation */
       }
 
       .section:hover {
@@ -42,6 +53,7 @@
         background: #ffecd2;
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
         cursor: pointer;
+        animation: rotate360 1s linear forwards; /* Rotate the section 360 degrees on hover */
       }
 
       .light {
@@ -152,4 +164,3 @@
     </footer>
   </body>
 </html>
-
