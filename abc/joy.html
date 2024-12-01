@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Project</title>
   <style>
     body {
       font-family: 'Poppins', sans-serif;
@@ -21,36 +24,37 @@
       text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
     }
 
-    .nav-bar {
+    nav {
       display: flex;
       justify-content: center;
-      background-color: #2575fc;
-      padding: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      background: #fff;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 10px 0;
     }
 
-    .nav-bar a {
-      color: white;
-      padding: 14px 20px;
+    nav a {
+      margin: 0 15px;
       text-decoration: none;
-      font-size: 1.1rem;
+      font-size: 1rem;
+      color: #2575fc;
       font-weight: bold;
-      margin: 0 10px;
-      border-radius: 5px;
-      transition: background 0.3s ease;
+      transition: color 0.3s ease;
     }
 
-    .nav-bar a:hover {
-      background-color: #6a11cb;
+    nav a:hover {
+      color: #6a11cb;
     }
 
     .container {
       max-width: 900px;
       margin: 20px auto;
       padding: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2575fc;
     }
 
     .section {
@@ -58,38 +62,44 @@
       padding: 20px;
       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
       background: #fff;
+      margin-bottom: 20px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-      animation: fadeIn 0.8s ease-out;
     }
 
     .section:hover {
-      animation: pulse 0.5s forwards;
+      transform: scale(1.05);
       box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
     }
 
-    .team-container {
+    .team {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 20px;
     }
 
     .team-member {
-      padding: 20px;
-      border-radius: 12px;
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
       text-align: center;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      background-color: #f9f9f9;
-      animation: fadeInUp 0.8s ease-out;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      animation: slideIn 1.5s ease;
     }
 
-    h3 {
-      margin-top: 0;
-      font-size: 1.5rem;
-      color: inherit;
+    .team-member:hover {
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      animation: pulse 0.5s forwards;
     }
 
-    h4, p {
-      margin: 10px 0;
+    .team-member h3 {
+      font-size: 1.2rem;
+      color: #6a11cb;
+      margin-bottom: 5px;
+    }
+
+    .team-member p {
+      font-size: 0.9rem;
+      color: #666;
     }
 
     footer {
@@ -102,7 +112,18 @@
       box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
     }
 
-    /* Keyframes for sections */
+    /* Animations */
+    @keyframes slideIn {
+      0% {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
     @keyframes pulse {
       0% {
         transform: scale(1);
@@ -110,101 +131,81 @@
       }
       50% {
         transform: scale(1.05);
-        background-color: #ffecd2;
+        background-color: #f0f0f0;
       }
       100% {
         transform: scale(1);
         background-color: #fff;
       }
     }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(-10px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
   </style>
 </head>
 <body>
-  <div class="nav-bar">
-    <a href="#home">Home</a>
-    <a href="#business-use-case">Business Use Case</a>
-    <a href="#project-overview">Project Overview</a>
-  </div>
-
   <header>
-    Data Structures and Algorithms <br> Meet Team No. 7
+    Course Project: Meet Team No. 7
   </header>
 
-  <div class="container" id="business-use-case">
-    <!-- Course Project Introduction -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Data Structures and Algorithms</a>
+    <a href="#">Business Cases</a>
+    <a href="#">Project Overview</a>
+  </nav>
+
+  <div class="container">
+    <h1>Course Project Introduction</h1>
     <div class="section">
-      <h3>Course Project Introduction</h3>
+      <h3>Problem Space</h3>
       <p>
-        The course project focuses on addressing real-world problem spaces by leveraging data structures and algorithms. The problem space was identified through in-depth research, brainstorming, and findings summarized from the white paper.
+        The project identifies challenges in city design, reflecting on findings from the white paper.
+        Team members discussed business cases to address these challenges, leading to a well-rounded
+        problem definition and actionable solutions.
       </p>
+    </div>
+    <div class="section">
+      <h3>Problem Definition and Team Details</h3>
       <p>
-        Reflecting on city design, the team identified business cases such as route optimization, data visualization, and resource management. The project integrates these into a cohesive framework, providing solutions tailored to real-time scenarios.
+        The project focuses on optimizing city layouts for better traffic flow and resource management.
+        Below are the details of the team members working on the project:
       </p>
     </div>
 
-    <!-- Business Cases -->
+    <div class="section">
+      <h3>Meet Our Team</h3>
+      <div class="team">
+        <div class="team-member">
+          <h3>Shreyas</h3>
+          <p>USN: 01FE23BCS<br>Roll No: 5</p>
+        </div>
+        <div class="team-member">
+          <h3>Yashavanth</h3>
+          <p>USN: 01FE24BCS418<br>Roll No: 553</p>
+        </div>
+        <div class="team-member">
+          <h3>Suleman</h3>
+          <p>USN: 01FE23BCS<br>Roll No: 5</p>
+        </div>
+        <div class="team-member">
+          <h3>Jayathirth</h3>
+          <p>USN: 01FE23BCS<br>Roll No: 521</p>
+        </div>
+      </div>
+    </div>
+
     <div class="section">
       <h3>Business Cases</h3>
+      <p>Each team member is working on specific aspects of city optimization:</p>
       <ul>
-        <li><b>Shreyas:</b> Optimizing routes for delivery services using graph-based algorithms.</li>
-        <li><b>Yashavanth:</b> Analyzing social networks with graph traversal techniques.</li>
-        <li><b>Suleman:</b> Inventory management with efficient searching and sorting algorithms.</li>
-        <li><b>Jayathirth:</b> Visualizing city traffic data using tree-based data structures.</li>
+        <li>Shreyas: Traffic flow algorithms for reducing congestion.</li>
+        <li>Yashavanth: Resource allocation models for efficient city services.</li>
+        <li>Suleman: Energy distribution and sustainability frameworks.</li>
+        <li>Jayathirth: Data-driven decision-making for public transportation systems.</li>
       </ul>
     </div>
   </div>
 
-  <div class="container" id="team">
-    <!-- Team Members -->
-    <h3>Team Members</h3>
-    <div class="team-container">
-      <div class="team-member">
-        <h4>Shreyas</h4>
-        <p><b>USN:</b> 01FE23BCS</p>
-        <p><b>Roll No:</b> 5</p>
-      </div>
-      <div class="team-member">
-        <h4>Yashavanth</h4>
-        <p><b>USN:</b> 01FE24BCS418</p>
-        <p><b>Roll No:</b> 553</p>
-      </div>
-      <div class="team-member">
-        <h4>Suleman</h4>
-        <p><b>USN:</b> 01FE23BCS</p>
-        <p><b>Roll No:</b> 5</p>
-      </div>
-      <div class="team-member">
-        <h4>Jayathirth</h4>
-        <p><b>USN:</b> 01FE23BCS</p>
-        <p><b>Roll No:</b> 521</p>
-      </div>
-    </div>
-  </div>
-
   <footer>
-    © 2024 Data Structures and Algorithms Course. All rights reserved.
+    © 2024 Team 7: Course Project. All rights reserved.
   </footer>
 </body>
 </html>
