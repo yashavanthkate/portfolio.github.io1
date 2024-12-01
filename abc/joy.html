@@ -19,34 +19,29 @@
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       font-weight: bold;
       text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-      position: relative;
     }
 
-    nav {
+    .nav-bar {
       display: flex;
       justify-content: center;
-      gap: 15px;
-      padding: 10px 0;
-      background-color: #f1f1f1;
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    nav button {
       background-color: #2575fc;
-      border: none;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 8px;
-      font-size: 1rem;
-      cursor: pointer;
-      font-weight: bold;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      transition: background-color 0.3s ease, transform 0.3s ease;
+      padding: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
-    nav button:hover {
+    .nav-bar a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin: 0 10px;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .nav-bar a:hover {
       background-color: #6a11cb;
-      transform: scale(1.05);
     }
 
     .container {
@@ -62,7 +57,7 @@
       border-radius: 12px;
       padding: 20px;
       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-      background: #fff;
+      background: #fff; /* Set all boxes to white */
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       cursor: pointer;
       position: relative;
@@ -131,19 +126,19 @@
   </style>
 </head>
 <body>
+  <div class="nav-bar">
+    <a href="#home">Home</a>
+    <a href="#business-use-case">Business Use Case</a>
+    <a href="#project-overview">Project Overview</a>
+  </div>
+
   <header>
     Data Structures and Algorithms
   </header>
 
-  <nav>
-    <button onclick="location.href='#home'">Home</button>
-    <button onclick="location.href='#business-usecase'">Business Use Case</button>
-    <button onclick="location.href='#project-overview'">Project Overview</button>
-  </nav>
-
-  <div class="container" id="home">
+  <div class="container">
     <!-- Section 1 -->
-    <div class="section">
+    <div class="section" id="home">
       <h3>What is the course about?</h3>
       <p>
         This course teaches us how to store and manage data (data structures)
@@ -154,7 +149,7 @@
     </div>
 
     <!-- Section 2 -->
-    <div class="section" id="business-usecase">
+    <div class="section">
       <h3>What kind of data structures and algorithms have you studied?</h3>
       <h4>Data Structures</h4>
       <ul>
@@ -170,7 +165,7 @@
     </div>
 
     <!-- Section 3 -->
-    <div class="section" id="project-overview">
+    <div class="section">
       <h3>How do you connect the course with real-time applications?</h3>
       <ul>
         <li>Search engines use algorithms to show results quickly when you search for something.</li>
