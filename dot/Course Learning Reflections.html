@@ -53,7 +53,7 @@
 <body>
   <div class="container">
     <h3>Course Learning Reflections</h3>
-    <h4>&bull; &nbsp;What are the kinds of problems we see in the nature? (iteration, recursion, backtracking)</h4>
+    <h4>&bull; &nbsp;1.What are the kinds of problems we see in the nature? (iteration, recursion, backtracking)</h4>
     <h5>1. Iteration Problems</h5>
     <h5>Examples in Nature</h5>
     <p>Iteration means repeating steps in a loop until the job is done.</p>
@@ -96,8 +96,8 @@
       <li>Finding all possible combinations, like arranging letters to form words.</li>
       <li>Figuring out the shortest route on a map.</li>
     </ul>
-
-    <h4>Space and Time Efficiency</h4>
+    <h4>&bull; &nbsp;What is space and time efficiency? Why are they important? Explain the different class of problems and orders of growth</h4>
+    <h5>Space and Time Efficiency</h5>
     <p>Time Efficiency is about how fast an algorithm runs. Imagine you’re baking a cake—time efficiency is how quickly you can finish baking.</p>
     <p>Space Efficiency is about how much memory or storage an algorithm uses while running. It’s like how many bowls or tools you need to bake that cake. The fewer, the better.</p>
     
@@ -116,7 +116,6 @@
       <li><strong>Super Tricky Problems (NP-Complete):</strong> The hardest puzzles. If we figure out a fast way to solve one of them, we can solve many other tricky problems just as fast.</li>
       <li><strong>Impossible Problems (NP-Hard):</strong> Problems so tough that no one knows how to solve them efficiently—or even check the answer easily in some cases.</li>
     </ul>
-    <h4>&bull; &nbsp;What is space and time efficiency? Why are they important? Explain the different class of problems and orders of growth</h4>
     <h5>Orders of Growth (How Algorithms Grow as Input Increases)</h5>
     <ul>
       <li><strong>O(1) – Constant Time:</strong> No matter the size, it always takes the same time. Example: Picking the first book from a pile.</li>
@@ -128,8 +127,7 @@
       <li><strong>O(n!) – Factorial Time:</strong> Time explodes! Example: Arranging 10 books in every possible order (10! = 3,628,800 ways).</li>
     </ul>
 
-    <!-- New Tree Structures and Optimizations -->
-    <h4>&bull; &nbsp;Tree Data Structures and Optimizations</h4>
+    <h4>&bull; &nbsp;3.The hierarchical data and how different tree data structures solve and optimize over the problem scenarios (tree, bst, avl, 2-3, red-black, heap, trie)</h4>
     <h5>1. Basic Tree (Unbalanced Tree)</h5>
     <p><strong>Structure:</strong> A basic tree has nodes connected in a parent-child relationship but doesn't impose any ordering or balancing rules.</p>
     <p><strong>Problem:</strong> Search operations can be inefficient if the tree becomes unbalanced, potentially degrading to a linear structure (like a linked list).</p>
@@ -164,6 +162,44 @@
     <p><strong>Structure:</strong> A trie is a tree-like data structure that stores strings. Each node represents a common prefix of some strings. It is particularly useful for handling large dictionaries or performing efficient prefix searches.</p>
     <p><strong>Problem:</strong> Storing and searching for strings, especially when working with large datasets like dictionaries.</p>
     <p><strong>Optimization:</strong> Tries allow fast lookups (O(m), where m is the length of the string) for both exact matching and prefix matching, making them ideal for applications like autocomplete, spell checkers, and dictionary searches.</p>
+
+    <h4>&bull; &nbsp;4.The need of array query algorithms and their implications. Their applications and principles need to be discussed</h4>
+    <h5>What Are Array Query Algorithms?</h5>
+    <ul>
+      <li>Find the sum of a few numbers in the list.</li>
+      <li>Find the biggest or smallest number in a section of the list.</li>
+      <li>Update a number in the list.</li>
+    </ul>
+    <h5>Why Do We Need These Algorithms?</h5>
+    <ul>
+      <li><strong>Speed: Without these algorithms, you'd have to check every number in the list, which can be slow, especially if you're asking the same question many times.</li>
+      <li><strong>Efficiency: These algorithms make sure that even with huge lists, you can get the answer in a fraction of the time. This is important for things like real-time applications or large datasets.</li>
+    </ul>
+    <h5>Types of Array Query Algorithms:</h5>
+    <h5>1.Prefix Sum (Cumulative Sum):</h5>
+    <ul>
+      <li><strong>What it does: It makes a new list where each element shows the total sum of all the numbers from the start to that point.</li>
+      <li><strong>Why it's useful: Once you have this list, you can easily find the sum of any part of the original list. Instead of adding numbers one by one every time, you can find the sum in an instant.</li>
+      <li>Example: Want the sum of numbers between position 3 and position 5? With prefix sums, you can get it right away.</li>
+    </ul>
+    <h5>2.Segment Tree:</h5>
+    <ul>
+      <li><strong>What it does: This is like a tree that helps you manage data in sections. Each section of the tree has a piece of your array, and you can quickly ask it for sums, maximums, or minimums in that section.</li>
+      <li><strong>Why it's useful: If you're often asking about a part of the list (like the sum or max in a range), the segment tree helps answer those questions super fast.</li>
+      <li>Example: In a game, if you want to know the highest score between levels 10 and 20, a segment tree can give you that quickly.</li>
+    </ul>
+    <h5>3.Binary Indexed Tree (BIT):</h5>
+    <ul>
+      <li><strong>What it does: It’s another way to store sums, but it’s designed for when you're updating the list and still need to do fast queries.</li>
+      <li><strong>Why it's useful: If the list changes often and you still need quick answers, BIT helps balance the need for updates and queries efficiently.</li>
+      <li>Example: Updating scores in a leaderboard and then asking for the total score quickly.</li>
+    </ul>
+    <h5>4.Sparse Table:</h5>
+    <ul>
+      <li><strong>What it does: This is for when the list doesn’t change much. It’s great for quickly answering questions like "What’s the smallest number in this part of the list?"</li>
+      <li><strong>Why it's useful: It's super fast at answering these questions, but only if the list doesn’t change often.</li>
+      <li>Example: Finding the lowest temperature in a city for the past month, if the data is mostly static.</li>
+    </ul>
   </div>
 </body>
 </html>
