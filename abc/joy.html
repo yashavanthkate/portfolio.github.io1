@@ -57,15 +57,29 @@
       border-radius: 12px;
       padding: 20px;
       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-      background: #fff; /* Set all boxes to white */
+      background: #fff;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-      cursor: pointer;
-      position: relative;
+      animation: fadeIn 0.8s ease-out;
     }
 
     .section:hover {
       animation: pulse 0.5s forwards;
       box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .team-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .team-member {
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      background-color: #f9f9f9;
+      animation: fadeInUp 0.8s ease-out;
     }
 
     h3 {
@@ -74,28 +88,8 @@
       color: inherit;
     }
 
-    p, ul {
+    h4, p {
       margin: 10px 0;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    li {
-      margin: 8px 0;
-      padding-left: 20px;
-      position: relative;
-    }
-
-    li:before {
-      content: "★";
-      color: #ff9800;
-      font-size: 18px;
-      position: absolute;
-      left: 0;
-      top: 0;
     }
 
     footer {
@@ -108,7 +102,7 @@
       box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
     }
 
-    /* Keyframes animation */
+    /* Keyframes for sections */
     @keyframes pulse {
       0% {
         transform: scale(1);
@@ -123,6 +117,28 @@
         background-color: #fff;
       }
     }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   </style>
 </head>
 <body>
@@ -133,46 +149,57 @@
   </div>
 
   <header>
-    Data Structures and Algorithms
+    Data Structures and Algorithms <br> Meet Team No. 7
   </header>
 
-  <div class="container">
-    <!-- Section 1 -->
-    <div class="section" id="home">
-      <h3>What is the course about?</h3>
+  <div class="container" id="business-use-case">
+    <!-- Course Project Introduction -->
+    <div class="section">
+      <h3>Course Project Introduction</h3>
       <p>
-        This course teaches us how to store and manage data (data structures)
-        and how to create step-by-step methods (algorithms) to solve different
-        problems. It’s the foundation of computer programming and is used in
-        almost every software and app you can think of.
+        The course project focuses on addressing real-world problem spaces by leveraging data structures and algorithms. The problem space was identified through in-depth research, brainstorming, and findings summarized from the white paper.
+      </p>
+      <p>
+        Reflecting on city design, the team identified business cases such as route optimization, data visualization, and resource management. The project integrates these into a cohesive framework, providing solutions tailored to real-time scenarios.
       </p>
     </div>
 
-    <!-- Section 2 -->
+    <!-- Business Cases -->
     <div class="section">
-      <h3>What kind of data structures and algorithms have you studied?</h3>
-      <h4>Data Structures</h4>
+      <h3>Business Cases</h3>
       <ul>
-        <li>Arrays (like lists of items), Stacks (like a stack of plates), Queues (like a line of people), and Linked Lists (like a chain).</li>
-        <li>Advanced ones like Trees (family trees) and Graphs (maps with points and connections).</li>
-      </ul>
-      <h4>Algorithms</h4>
-      <ul>
-        <li>Sorting and Searching: How to organize data (like sorting numbers) or quickly find what you need (like finding a name in a contact list).</li>
-        <li>Pathfinding: Finding the shortest route, like Google Maps does.</li>
-        <li>Optimization: Solving problems by making the best choices, like packing a bag with maximum items but limited space.</li>
+        <li><b>Shreyas:</b> Optimizing routes for delivery services using graph-based algorithms.</li>
+        <li><b>Yashavanth:</b> Analyzing social networks with graph traversal techniques.</li>
+        <li><b>Suleman:</b> Inventory management with efficient searching and sorting algorithms.</li>
+        <li><b>Jayathirth:</b> Visualizing city traffic data using tree-based data structures.</li>
       </ul>
     </div>
+  </div>
 
-    <!-- Section 3 -->
-    <div class="section">
-      <h3>How do you connect the course with real-time applications?</h3>
-      <ul>
-        <li>Search engines use algorithms to show results quickly when you search for something.</li>
-        <li>Social media apps use graphs to recommend friends or connections.</li>
-        <li>GPS systems use algorithms to find the shortest route to your destination.</li>
-        <li>Even basic things like undo and redo in apps use stacks!</li>
-      </ul>
+  <div class="container" id="team">
+    <!-- Team Members -->
+    <h3>Team Members</h3>
+    <div class="team-container">
+      <div class="team-member">
+        <h4>Shreyas</h4>
+        <p><b>USN:</b> 01FE23BCS</p>
+        <p><b>Roll No:</b> 5</p>
+      </div>
+      <div class="team-member">
+        <h4>Yashavanth</h4>
+        <p><b>USN:</b> 01FE24BCS418</p>
+        <p><b>Roll No:</b> 553</p>
+      </div>
+      <div class="team-member">
+        <h4>Suleman</h4>
+        <p><b>USN:</b> 01FE23BCS</p>
+        <p><b>Roll No:</b> 5</p>
+      </div>
+      <div class="team-member">
+        <h4>Jayathirth</h4>
+        <p><b>USN:</b> 01FE23BCS</p>
+        <p><b>Roll No:</b> 521</p>
+      </div>
     </div>
   </div>
 
