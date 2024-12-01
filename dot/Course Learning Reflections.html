@@ -127,7 +127,7 @@
       <li><strong>O(n!) – Factorial Time:</strong> Time explodes! Example: Arranging 10 books in every possible order (10! = 3,628,800 ways).</li>
     </ul>
 
-    <h4>&bull; &nbsp;3.The hierarchical data and how different tree data structures solve and optimize over the problem scenarios (tree, bst, avl, 2-3, red-black, heap, trie)</h4>
+    <h4>&bull; &nbsp;4.The hierarchical data and how different tree data structures solve and optimize over the problem scenarios (tree, bst, avl, 2-3, red-black, heap, trie)</h4>
     <h5>1. Basic Tree (Unbalanced Tree)</h5>
     <p><strong>Structure:</strong> A basic tree has nodes connected in a parent-child relationship but doesn't impose any ordering or balancing rules.</p>
     <p><strong>Problem:</strong> Search operations can be inefficient if the tree becomes unbalanced, potentially degrading to a linear structure (like a linked list).</p>
@@ -163,7 +163,7 @@
     <p><strong>Problem:</strong> Storing and searching for strings, especially when working with large datasets like dictionaries.</p>
     <p><strong>Optimization:</strong> Tries allow fast lookups (O(m), where m is the length of the string) for both exact matching and prefix matching, making them ideal for applications like autocomplete, spell checkers, and dictionary searches.</p>
 
-    <h4>&bull; &nbsp;4.The need of array query algorithms and their implications. Their applications and principles need to be discussed</h4>
+    <h4>&bull; &nbsp;5.The need of array query algorithms and their implications. Their applications and principles need to be discussed</h4>
     <h5>What Are Array Query Algorithms?</h5>
     <ul>
       <li>Find the sum of a few numbers in the list.</li>
@@ -213,7 +213,7 @@
       <li><strong>Efficient Searching: Some algorithms (like segment trees or BITs) allow you to find answers to questions (like sum or max) in just a few steps, even if the list is huge.</li>
       <li><strong>Updating Data: For lists that change often, these algorithms let you update a number in the list quickly while still letting you ask questions efficiently.</li>
     </ul>
-    <h4>&bull; &nbsp;Differentiate between tree and graphs and their traversals. The applications of each</h4>
+    <h4>&bull; &nbsp;6.Differentiate between tree and graphs and their traversals. The applications of each</h4>
     <h5>1.Structure:</h5>
     <ul>
       <li><strong>Trees: Think of a tree like a family tree. There’s one main person at the top (the root), and everyone else below them is connected in a clear parent-child relationship. Trees don’t have loops or shortcuts. Every child has one parent only.</li>
@@ -261,7 +261,7 @@
       <li>4.Routing Networks:</li>
       <ul>Graphs help route data in computer networks or optimize delivery routes.</ul>
     </ul>
-    <h4>Deliberate on sorting and searching algorithms, the technique behind each and they connect to real world</h4>
+    <h4>&bull; &nbsp;7.Deliberate on sorting and searching algorithms, the technique behind each and they connect to real world</h4>
     <h5>Sorting Algorithms (Organizing Things)</h5>
     <h5>1.Bubble Sort:</h5>
     <ul>
@@ -308,7 +308,7 @@
       <li>Example in real life: Using your friend’s house address to go directly to their home instead of checking every house on the street.</li>
       <li>Used in: Password systems, phone books, and online databases.</li>
     </ul>
-    <h4>Discuss the importance of graph algorithms with respect to spanning trees and shortest paths</h4>
+    <h4>&bull; &nbsp;8.Discuss the importance of graph algorithms with respect to spanning trees and shortest paths</h4>
     <h5>Spanning Trees</h5>
     <ul>
       <li>A spanning tree connects all points in a graph with the least number of connections and no loops (cycles).</li>
@@ -324,6 +324,53 @@
       <li>Dijkstra's Algorithm: Finds the shortest path step by step, ensuring efficiency for travel or data routing.</li>
       <li>Bellman-Ford Algorithm: Similar to Dijkstra’s but can handle routes where you "gain" (e.g., discounted costs).</li>
       <li>Key benefit: Saves time and money, improves navigation, and helps in emergencies like ambulance routing.</li>
+    </ul>
+    <h4>&bull; &nbsp;9.Discuss about the different studied algorithm design techniques.</h4>
+    <h5>What Are Array Query Algorithms?</h5>
+    <ul>
+      <li>Find the sum of a few numbers in the list.</li>
+      <li>Find the biggest or smallest number in a section of the list.</li>
+      <li>Update a number in the list.</li>
+    </ul>
+    <h5>1.Divide and Conquer:<h5>
+    <ul>
+      <li>Break the problem into smaller pieces, solve each, and combine.</li>
+      <li>Example: Splitting a pizza into slices to share easily.</li>
+    </ul>
+    <h5>2.Dynamic Programming (DP)</h5>
+    <ul>
+      <li>Solve problems step-by-step and reuse past results to save time.</li>
+      <li>Example: Remembering shortcuts while driving to avoid recalculating routes.</li>
+    </ul>
+    <h5>3.Greedy Algorithms</h5>
+    <ul>
+      <li>Make the best choice at each step, hoping it leads to the best overall.</li>
+      <li>Example: Taking the shortest path at every turn when walking.</li>
+    </ul>
+    <h5>4.Backtracking</h5>
+    <ul>
+      <li>Try all options, and if one fails, go back and try another.</li>
+      <li>Example: Solving a maze by testing all paths until you find the exit.</li>
+    </ul>
+    <h5>5.Brute Force</h5>
+    <ul>
+      <li>Try every possible solution and pick the best one.</li>
+      <li>Example: Trying all keys to open a lock.</li>
+    </ul>
+      <h5>6.Recursive Algorithms</h5>
+    <ul>
+      <li>Solve the problem by breaking it into smaller versions of itself.</li>
+      <li>Example: Nesting boxes and opening the smallest one first.</li>
+    </ul>
+      <h5>7.Graph Techniques</h5>
+    <ul>
+      <li>Solve problems using nodes and connections.</li>
+      <li>Example: Finding the fastest route in Google Maps.</li>
+    </ul>
+      <h5>8.Randomized Algorithms</h5>
+    <ul>
+      <li>Use random guesses to simplify or speed up the solution.</li>
+      <li>Example: Rolling dice to estimate probabilities.</li>
     </ul>
   </div>
 </body>
