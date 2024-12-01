@@ -132,7 +132,7 @@
     <h5>1. Basic Tree (Unbalanced Tree)</h5>
     <p><strong>Structure:</strong> A basic tree has nodes connected in a parent-child relationship but doesn't impose any ordering or balancing rules.</p>
     <p><strong>Problem:</strong> Search operations can be inefficient if the tree becomes unbalanced, potentially degrading to a linear structure (like a linked list).</p>
-    <p><strong>Optimization:</strong> This is the most straightforward structure but doesn't optimize performance for large datasets.</p>
+    <strong>Optimization:</strong> This is the most straightforward structure but doesn't optimize performance for large datasets.</p>
 
     <h5>2. Binary Search Tree (BST)</h5>
     <p><strong>Structure:</strong> A BST is a type of tree where each node has at most two children. For any given node, all nodes in the left subtree have smaller values, and all nodes in the right subtree have larger values.</p>
@@ -140,29 +140,29 @@
     <p><strong>Optimization:</strong> Ideal for ordered data, allowing efficient searching, insertion, and deletion in O(log n) time for balanced trees.</p>
 
     <h5>3. AVL Tree (Adelson-Velsky and Landis Tree)</h5>
-    <p><strong>Structure:</strong> An AVL tree is a self-balancing BST where the height difference between the left and right subtrees (called balance factor) of any node is at most 1.</p>
-    <p><strong>Problem:</strong> Unbalanced BSTs lead to inefficient operations.</p>
-    <p><strong>Optimization:</strong> AVL trees automatically balance themselves during insertions and deletions, ensuring that all operations remain O(log n). However, balancing operations (rotations) can slightly impact performance.</p>
+    <p><strong>Structure:</strong> An AVL tree is a self-balancing binary search tree where the difference between the heights of the left and right subtrees of every node is at most one.</p>
+    <p><strong>Problem:</strong> Balancing the tree during insertions and deletions adds overhead.</p>
+    <p><strong>Optimization:</strong> Ensures O(log n) time complexity for search, insert, and delete operations by maintaining balance at all times.</p>
 
     <h5>4. 2-3 Tree</h5>
-    <p><strong>Structure:</strong> A 2-3 tree is a balanced tree where each node can have 2 or 3 children, and the tree remains perfectly balanced (all leaves are at the same level).</p>
-    <p><strong>Problem:</strong> Maintaining balance and ordering in dynamic data can be difficult.</p>
-    <p><strong>Optimization:</strong> The 2-3 tree maintains balance by splitting and merging nodes during insertions and deletions. It guarantees logarithmic time complexity for search, insertion, and deletion (O(log n)).</p>
+    <p><strong>Structure:</strong> A 2-3 tree is a balanced search tree where each node can have 2 or 3 children and 1 or 2 keys.</p>
+    <p><strong>Problem:</strong> Less efficient for memory usage than other trees, especially when data is sparse.</p>
+    <p><strong>Optimization:</strong> It’s a balanced tree that ensures efficient search operations with a guaranteed O(log n) time complexity.</p>
 
     <h5>5. Red-Black Tree</h5>
-    <p><strong>Structure:</strong> A red-black tree is a self-balancing binary search tree with an additional constraint on the colors of nodes (either red or black). This structure ensures that the tree remains approximately balanced.</p>
-    <p><strong>Problem:</strong> Keeping a binary search tree balanced while allowing quick insertion and deletion.</p>
-    <p><strong>Optimization:</strong> Red-black trees offer good performance with O(log n) operations for search, insert, and delete. The red-black tree is more relaxed than an AVL tree, offering faster insertions and deletions at the cost of slightly less strict balancing.</p>
+    <p><strong>Structure:</strong> A red-black tree is a self-balancing binary search tree with an additional property that each node is either red or black, helping to maintain balance.</p>
+    <p><strong>Problem:</strong> Insertion and deletion may require rebalancing.</p>
+    <p><strong>Optimization:</strong> Red-black trees are balanced with O(log n) time complexity for insertions, deletions, and lookups.</p>
 
-    <h5>6. Heap (Binary Heap)</h5>
-    <p><strong>Structure:</strong> A binary heap is a complete binary tree where the parent node is either greater than (max heap) or smaller than (min heap) its child nodes.</p>
-    <p><strong>Problem:</strong> Finding the maximum or minimum element efficiently.</p>
-    <p><strong>Optimization:</strong> Heaps are optimized for efficient priority queue operations. Operations like insertions and deletions take O(log n), while finding the max or min element takes O(1).</p>
+    <h5>6. Heap</h5>
+    <p><strong>Structure:</strong> A heap is a special tree-based structure where the parent node is ordered in a specific way (max-heap or min-heap).</p>
+    <p><strong>Problem:</strong> Heaps are not suited for searching arbitrary elements.</p>
+    <p><strong>Optimization:</strong> Efficient for priority queue operations, like retrieving the maximum or minimum element in O(1) time and inserting or deleting elements in O(log n) time.</p>
 
-    <h5>7. Trie (Prefix Tree)</h5>
-    <p><strong>Structure:</strong> A trie is a tree-like data structure that stores strings. Each node represents a common prefix of some strings. It is particularly useful for handling large dictionaries or performing efficient prefix searches.</p>
-    <p><strong>Problem:</strong> Storing and searching for strings, especially when working with large datasets like dictionaries.</p>
-    <p><strong>Optimization:</strong> Tries allow fast lookups (O(m), where m is the length of the string) for both exact matching and prefix matching, making them ideal for applications like autocomplete, spell checkers, and dictionary searches.</p>
+    <h5>7. Trie</h5>
+    <p><strong>Structure:</strong> A trie is a tree-like data structure used for storing a dynamic set of strings, where each node represents a character of the string.</p>
+    <p><strong>Problem:</strong> Memory usage can be high when there are many nodes for common prefixes.</p>
+    <p><strong>Optimization:</strong> Ideal for tasks like searching for a word or prefix, providing O(m) time complexity, where m is the length of the word being searched.</p>
   </div>
 </body>
 </html>
