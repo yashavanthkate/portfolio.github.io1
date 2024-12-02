@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom, #e3f2fd, #fbe9e7);
+        color: #333;
+      }
+
+      header {
+        text-align: center;
+        padding: 20px 10px;
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+        color: white;
+        font-size: 2rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        font-weight: bold;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 20px auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .section {
+        border-radius: 12px;
+        padding: 20px;
+        background: #fff; /* All boxes will have a white background */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .section:hover {
+        transform: translateY(-8px);
+        background: #ffecd2;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+      }
+
+      h3 {
+        margin-top: 0;
+        font-size: 1.5rem;
+        color: inherit;
+      }
+
+      p,
+      ul {
+        margin: 10px 0;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      li {
+        margin: 8px 0;
+        padding-left: 20px;
+        position: relative;
+      }
+
+      li:before {
+        content: "★";
+        color: #ff9800;
+        font-size: 18px;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      footer {
+        text-align: center;
+        padding: 15px 10px;
+        background: #2575fc;
+        color: white;
+        font-size: 0.9rem;
+        margin-top: 20px;
+        box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Styling for buttons */
+      .button-container {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        margin: 20px 0;
+      }
+
+      .button {
+        padding: 10px 20px;
+        background-color: #2575fc;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .button:hover {
+        background-color: #6a11cb;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      Data Structures and Algorithms – Fantasy Learning
+    </header>
+
+    <div class="container">
+      <!-- Button section -->
+      <div class="button-container">
+        <button class="button">Homepage</button>
+        <button class="button"><a href="abc/joy.html"></a>Business Usecase</button>
+        <button class="button">Project Overview</button>
+      </div>
+
+      <div class="section">
+        <h3>Home Page – Course Introduction</h3>
+        <p>
+          Welcome to the world of Data Structures and Algorithms (DSA)! This
+          course is all about learning how to organize and process data
+          effectively to solve problems faster and smarter.
+        </p>
+      </div>
+
+      <div class="section">
+        <h3>What is the course about?</h3>
+        <p>
+          This course teaches us how to store and manage data (data structures)
+          and how to create step-by-step methods (algorithms) to solve different
+          problems. It’s the foundation of computer programming and is used in
+          almost every software and app you can think of.
+        </p>
+      </div>
+
+      <div class="section">
+        <h3>What kind of data structures and algorithms have you studied?</h3>
+        <h4>Data Structures</h4>
+        <ul>
+          <li>Arrays (like lists of items), Stacks (like a stack of plates), Queues (like a line of people), and Linked Lists (like a chain).</li>
+          <li>Advanced ones like Trees (family trees) and Graphs (maps with points and connections).</li>
+        </ul>
+
+        <h4>Algorithms</h4>
+        <ul>
+          <li>Sorting and Searching: How to organize data (like sorting numbers) or quickly find what you need (like finding a name in a contact list).</li>
+          <li>Pathfinding: Finding the shortest route, like Google Maps does.</li>
+          <li>Optimization: Solving problems by making the best choices, like packing a bag with maximum items but limited space.</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>How do you connect the course with real-time applications?</h3>
+        <ul>
+          <li>Search engines use algorithms to show results quickly when you search for something.</li>
+          <li>Social media apps use graphs to recommend friends or connections.</li>
+          <li>GPS systems use algorithms to find the shortest route to your destination.</li>
+          <li>Even basic things like undo and redo in apps use stacks!</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      © 2024 Data Structures and Algorithms Course. All rights reserved.
+    </footer>
+  </body>
+</html>
