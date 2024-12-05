@@ -9,8 +9,72 @@
       font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(to bottom, #f5f7fa, #e3f2fd);
+      background: linear-gradient(to bottom, #f5f7fa, #c3cfe2);
       color: #333;
+    }
+
+    nav {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr); /* 5 items per row */
+      gap: 10px;
+      padding: 15px;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      padding: 10px 10px;
+      border-radius: 20px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-align: center;
+      background: transparent;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    nav a:hover {
+      color: #2575fc;
+      background: white;
+      transform: scale(1.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    nav a:before {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 3px;
+      bottom: 0;
+      left: 50%;
+      background-color: white;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover:before {
+      width: 100%;
+      left: 0;
+    }
+
+    nav a:active {
+      transform: scale(0.95);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        grid-template-columns: repeat(2, 1fr); /* Adjust for smaller screens */
+        gap: 10px;
+      }
+
+      nav a {
+        font-size: 0.9rem;
+      }
     }
 
     .container {
@@ -22,7 +86,6 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-
 
     h1 {
       font-size: 2rem;
@@ -84,18 +147,31 @@
   </style>
 </head>
 <body>
+  <!-- Navigation -->
+  <nav>
+    <a href="dsa/Nature Problems.html">Nature Problems</a>
+    <a href="dsa/Space and Time Efficiency.html">Space & Time Efficiency</a>
+    <a href="#design-principles">Design Principles</a>
+    <a href="#trees">Tree Structures</a>
+    <a href="#array-algorithms">Array Queries</a>
+    <a href="#tree-vs-graph">Trees vs Graphs</a>
+    <a href="#sorting-searching">Sorting & Searching</a>
+    <a href="#graph-algorithms">Graph Algorithms</a>
+    <a href="#design-techniques">Design Techniques</a>
+    <a href="#optimization">Optimization</a>
+  </nav>
+
+  <!-- Content -->
   <div class="container">
     <h1>What are the Kinds of Problems We See in Nature?</h1>
     
     <h2>1. Iteration Problems</h2>
-
     <h3>Examples in Nature</h3>
     <ul>
       <li>Iteration means repeating steps in a loop until the job is done.</li>
       <li>Think of the sun rising and setting every day—it’s a repeating cycle.</li>
       <li>Counting the rings on a tree to know its age—each ring is added one at a time over the years.</li>
     </ul>
-
     <h3>Examples in Coding</h3>
     <div class="example">
       <p>🔹 Going through a list to find the largest number.</p>
@@ -103,14 +179,12 @@
     </div>
 
     <h2>2. Recursion Problems</h2>
-
     <h3>Examples in Nature</h3>
     <ul>
       <li>Recursion is when a problem solves itself in smaller steps until it’s complete.</li>
       <li>Imagine a tree: A branch splits into smaller branches, which split into even smaller branches.</li>
       <li>Think of how you fold a piece of paper in half repeatedly—it’s the same process over and over.</li>
     </ul>
-
     <h3>Examples in Coding</h3>
     <div class="example">
       <p>🔹 Calculating factorials (e.g., 5! = 5 × 4 × 3 × 2 × 1).</p>
@@ -118,14 +192,12 @@
     </div>
 
     <h2>3. Backtracking Problems</h2>
-
     <h3>Examples in Nature</h3>
     <ul>
       <li>Backtracking is like trial and error: you try a path, and if it doesn’t work, you go back and try another one.</li>
       <li>Picture an ant trying to find food—it explores one path, and if it’s blocked, it turns around and tries a different way.</li>
       <li>Solving a maze: If one route doesn’t work, you go back and try a new direction.</li>
     </ul>
-
     <h3>Examples in Coding</h3>
     <div class="example">
       <p>🔹 Solving puzzles like Sudoku.</p>
