@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #f5f7fa, #c3cfe2);
+      color: #333;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap; /* Allows wrapping to the next line */
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      padding: 15px;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      padding: 10px 10px;
+      border-radius: 20px;
+      font-size: 1rem;
+      font-weight: bold;
+      background: transparent;
+      transition: all 0.3s ease;
+      position: relative;
+      flex: 1 1 auto; /* Makes links evenly distributed */
+    }
+
+    nav a:hover {
+      color: #2575fc;
+      background: white;
+      transform: scale(1.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    nav a:before {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 3px;
+      bottom: 0;
+      left: 50%;
+      background-color: white;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover:before {
+      width: 100%;
+      left: 0;
+    }
+
+    nav a:active {
+      transform: scale(0.95);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Adjust layout for smaller screens */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#nature-problems">Nature Problems</a>
+    <a href="#efficiency">Space & Time Efficiency</a>
+    <a href="#design-principles">Design Principles</a>
+    <a href="#trees">Tree Structures</a>
+    <a href="#array-algorithms">Array Queries</a>
+    <a href="#tree-vs-graph">Trees vs Graphs</a>
+    <a href="#sorting-searching">Sorting & Searching</a>
+    <a href="#graph-algorithms">Graph Algorithms</a>
+    <a href="#design-techniques">Design Techniques</a>
+    <a href="#nature-problems">Nature Problems</a>
+    <a href="#nature-problems">Nature Problems</a>
+    <a href="#nature-problems">Nature Problems</a>
+    <a href="#nature-problems">Nature Problems</a>
+    <a href="#nature-problems">Nature Problems</a>
+    <a href="#nature-problems">Nature Problems</a>
+    <a href="#nature-problems">Nature Problems</a>
+    <a href="#nature-problems">Nature Problems</a>
+    <a href="#nature-problems">Nature Problems</a>
+    <a href="#nature-problems">Nature Problems</a>
+    <a href="#nature-problems">Nature Problems</a>
+
+  </nav>
+
+  <section id="nature-problems" style="padding: 20px;">
+    <h1>Nature Problems</h1>
+    <p>Discussion on iteration, recursion, and backtracking.</p>
+  </section>
+
+  <!-- Add more sections as needed -->
+</body>
+</html>
