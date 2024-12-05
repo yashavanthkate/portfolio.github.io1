@@ -15,7 +15,7 @@
 
     nav {
       display: grid;
-      grid-template-columns: repeat(5, 1fr); /* 5 items per row */
+      grid-template-columns: repeat(10, 1fr); /* 10 links per row */
       gap: 10px;
       padding: 15px;
       background: linear-gradient(135deg, #6a11cb, #2575fc);
@@ -66,14 +66,10 @@
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
     }
 
+    /* Adjust layout for smaller screens */
     @media (max-width: 768px) {
       nav {
-        grid-template-columns: repeat(2, 1fr); /* Adjust for smaller screens */
-        gap: 10px;
-      }
-
-      nav a {
-        font-size: 0.9rem;
+        grid-template-columns: repeat(2, 1fr); /* 2 links per row for smaller screens */
       }
     }
 
@@ -84,7 +80,6 @@
       background: white;
       border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     h1 {
@@ -100,12 +95,6 @@
       color: #2575fc;
       margin-top: 20px;
       text-decoration: underline;
-    }
-
-    h3 {
-      font-size: 1.2rem;
-      color: #6a11cb;
-      margin-top: 15px;
     }
 
     ul {
@@ -125,32 +114,12 @@
       left: 0;
       font-size: 1.2rem;
     }
-
-    p {
-      font-size: 1rem;
-      line-height: 1.6;
-      margin: 10px 0;
-      color: #555;
-    }
-
-    .example {
-      background: #fbe9e7;
-      border-left: 5px solid #ff7043;
-      padding: 10px 15px;
-      margin: 10px 0;
-      border-radius: 8px;
-    }
-
-    .example p {
-      margin: 0;
-    }
   </style>
 </head>
 <body>
-  <!-- Navigation -->
   <nav>
-    <a href="/dot/dsa/Nature Problems.html">Nature Problems</a>
-    <a href="Space and Time Efficiency.html">Space & Time Efficiency</a>
+    <a href="#nature-problems">Nature Problems</a>
+    <a href="#efficiency">Space & Time Efficiency</a>
     <a href="#design-principles">Design Principles</a>
     <a href="#trees">Tree Structures</a>
     <a href="#array-algorithms">Array Queries</a>
@@ -158,14 +127,23 @@
     <a href="#sorting-searching">Sorting & Searching</a>
     <a href="#graph-algorithms">Graph Algorithms</a>
     <a href="#design-techniques">Design Techniques</a>
-    <a href="#optimization">Optimization</a>
+    <a href="#optimization">Optimization Techniques</a>
+    <a href="#nature-problems">Nature Problems</a>
+    <a href="#efficiency">Space & Time Efficiency</a>
+    <a href="#design-principles">Design Principles</a>
+    <a href="#trees">Tree Structures</a>
+    <a href="#array-algorithms">Array Queries</a>
+    <a href="#tree-vs-graph">Trees vs Graphs</a>
+    <a href="#sorting-searching">Sorting & Searching</a>
+    <a href="#graph-algorithms">Graph Algorithms</a>
+    <a href="#design-techniques">Design Techniques</a>
+    <a href="#optimization">Optimization Techniques</a>
   </nav>
 
-  <!-- Content -->
   <div class="container">
     <h1>What are the Kinds of Problems We See in Nature?</h1>
     
-    <h2>1. Iteration Problems</h2>
+    <h2 id="iteration">1. Iteration Problems</h2>
     <h3>Examples in Nature</h3>
     <ul>
       <li>Iteration means repeating steps in a loop until the job is done.</li>
@@ -178,7 +156,7 @@
       <p>🔹 Adding all the numbers in a group (like calculating your total grocery bill).</p>
     </div>
 
-    <h2>2. Recursion Problems</h2>
+    <h2 id="recursion">2. Recursion Problems</h2>
     <h3>Examples in Nature</h3>
     <ul>
       <li>Recursion is when a problem solves itself in smaller steps until it’s complete.</li>
@@ -191,7 +169,7 @@
       <p>🔹 Finding your way through a family tree or exploring nested folders on your computer.</p>
     </div>
 
-    <h2>3. Backtracking Problems</h2>
+    <h2 id="backtracking">3. Backtracking Problems</h2>
     <h3>Examples in Nature</h3>
     <ul>
       <li>Backtracking is like trial and error: you try a path, and if it doesn’t work, you go back and try another one.</li>
