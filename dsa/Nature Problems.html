@@ -143,12 +143,12 @@
 </head>
 <body>
   <nav>
-        <a href="#Nature Problems">Nature Problems</a>
-        <a href="#Space and Time Efficiency">Space & Time Efficiency</a>
+        <a href="#1">Nature Problems</a>
+        <a href="#2">Space & Time Efficiency</a>
         <a href="#design-principles">Design Principles</a>
-        <a href="#Tree Structures">Tree Structures</a>
-        <a href="#array-algorithms">Array Queries</a>
-        <a href="Tree Structures.html">Trees vs Graphs</a>
+        <a href="#4">Tree Structures</a>
+        <a href="#5">Array Queries</a>
+        <a href="#6">Trees vs Graphs</a>
         <a href="#sorting-searching">Sorting & Searching</a>
         <a href="#graph-algorithms">Graph Algorithms</a>
         <a href="#design-techniques">Design Techniques</a>
@@ -165,7 +165,7 @@
         <a href="#optimization">Optimization Techniques</a>
       </nav>
   <div class="container">
-    <section id="Nature Problems">
+    <section id=1>
     <h1>What are the Kinds of Problems We See in Nature?</h1>
     
     <h2>1. Iteration Problems</h2>
@@ -216,7 +216,7 @@
   </div>
       
     <div class="Space and Time Efficiency">
-      <section id="Space and Time Efficiancy">
+      <section id=2>
     <h1>Space and Time Efficiency</h1>
 
     <h2>Time Efficiency</h2>
@@ -271,7 +271,7 @@
   </div>
 
   <div class="container">
-    <section id="Tree Structures">
+    <section id=4>
     <h1>Hierarchical Data and Tree Structures</h1>
 
     <h2>1. General Tree</h2>
@@ -319,6 +319,56 @@
     </ul>
     </section>
   </div>
+  <div class="container">
+    <section id=6>
+    <h1>Difference Between Tree and Graph</h1>
+    
+    <h2>1. Structure</h2>
+    <p><strong>Trees:</strong> A tree is like a <span class="tree">family tree</span>. There’s one main node at the top (the root), and every other node is connected in a clear parent-child relationship. Trees do not have loops or shortcuts.</p>
+    <p><strong>Graphs:</strong> A graph is more like a <span class="graph">road map</span>. It consists of nodes connected by edges, and you can have multiple ways to travel between nodes. Graphs may contain loops and cycles.</p>
+
+    <h2>2. Connection</h2>
+    <p><strong>Trees:</strong> Trees are always connected, meaning you can always reach every node from the root without any loops.</p>
+    <p><strong>Graphs:</strong> Graphs are more general and may contain disconnected components or loops.</p>
+
+    <h2>How Do We Move Through Them?</h2>
+
+    <div class="traversal">
+      <h3>Tree Traversals</h3>
+      <ul>
+        <li><strong>Pre-order:</strong> Visit the root, then left, then right.</li>
+        <li><strong>In-order:</strong> Visit the left, then root, then right (great for sorting).</li>
+        <li><strong>Post-order:</strong> Visit left, right, then root (used for tree deletions).</li>
+        <li><strong>Level-order:</strong> Visit nodes layer by layer from top to bottom.</li>
+      </ul>
+    </div>
+
+    <div class="traversal">
+      <h3>Graph Traversals</h3>
+      <ul>
+        <li><strong>Depth-First Search (DFS):</strong> Explore as far as possible down one path before backtracking.</li>
+        <li><strong>Breadth-First Search (BFS):</strong> Explore all nearby nodes before moving further.</li>
+      </ul>
+    </div>
+
+    <h2>Where Are Trees and Graphs Used?</h2>
+
+    <h3>Applications of Trees</h3>
+    <ul>
+      <li><strong>Organizing Information:</strong> File systems (folders and subfolders), family trees.</li>
+      <li><strong>Searching Fast:</strong> Binary Search Trees (BST) allow fast searches (e.g., dictionary lookups).</li>
+      <li><strong>Game Strategies:</strong> AI for decision-making in games like chess.</li>
+      <li><strong>Parsing Data:</strong> Trees are used to evaluate expressions like formulas.</li>
+    </ul>
+
+    <h3>Applications of Graphs</h3>
+    <ul>
+      <li><strong>Social Networks:</strong> People as nodes and friendships as edges.</li>
+      <li><strong>Maps:</strong> Cities as nodes and roads as edges (used in GPS).</li>
+      <li><strong>Internet:</strong> Websites as nodes and hyperlinks as edges for search engines.</li>
+      <li><strong>Routing Networks:</strong> Used in computer networks and delivery systems.</li>
+    </ul>
+    </section>
   </div>
 </body>
 </html>
