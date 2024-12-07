@@ -149,7 +149,7 @@
         <a href="#4">Tree Structures</a>
         <a href="#5">Array Queries</a>
         <a href="#6">Trees vs Graphs</a>
-        <a href="#sorting-searching">Sorting & Searching</a>
+        <a href="#7">Sorting & Searching</a>
         <a href="#graph-algorithms">Graph Algorithms</a>
         <a href="#design-techniques">Design Techniques</a>
         <a href="#optimization">Optimization Techniques</a>
@@ -417,6 +417,72 @@
       <li><strong>Priority-based tasks:</strong> Heap.</li>
       <li><strong>Working with strings:</strong> Trie.</li>
     </ul>
+  </section>
+  </div>
+  <div class="container">
+    <section id=7>
+    <h1>Graph Algorithms: Spanning Trees & Shortest Paths</h1>
+
+    <!-- Spanning Trees Section -->
+    <div class="spanning-trees">
+      <h2>Spanning Trees</h2>
+      <p><strong>What is it?</strong> A spanning tree is a way to connect all points (nodes) in a graph using the least number of connections (edges), avoiding loops.</p>
+
+      <h3>Real-World Uses:</h3>
+      <ul>
+        <li>Minimizing the cost of building roads, cables, or pipelines between cities.</li>
+        <li>Designing electricity grids to ensure all homes are connected efficiently.</li>
+        <li>Building railway networks with the least material or cost.</li>
+      </ul>
+
+      <h3>Algorithms:</h3>
+      <p><strong>1. Prim's Algorithm:</strong> Starts with a single point and keeps adding the smallest connection to grow the network.</p>
+      <p><strong>2. Kruskal's Algorithm:</strong> Picks the smallest connections first, ensuring everything connects without loops.</p>
+
+      <div class="example">
+        <h3>Example:</h3>
+        <p>Imagine you need to connect four cities with the least cost. A spanning tree will ensure you use the minimum number of roads, saving resources.</p>
+      </div>
+
+      <div class="benefits">
+        <h3>Key Benefits:</h3>
+        <ul>
+          <li>Reduces construction costs for large networks like electricity grids or internet cables.</li>
+          <li>Ensures efficient resource usage in real-world projects.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Shortest Paths Section -->
+    <div class="shortest-paths">
+      <h2>Shortest Paths</h2>
+      <p><strong>What is it?</strong> The shortest path in a graph is the minimum distance or cost required to travel between two points.</p>
+
+      <h3>Real-World Uses:</h3>
+      <ul>
+        <li><strong>Navigation:</strong> GPS apps like Google Maps calculate the fastest or shortest route to your destination.</li>
+        <li><strong>Delivery optimization:</strong> Companies like Amazon plan the quickest delivery routes to save time and fuel.</li>
+        <li><strong>Emergency services:</strong> Ambulances find the fastest way to reach patients during critical moments.</li>
+      </ul>
+
+      <h3>Algorithms:</h3>
+      <p><strong>1. Dijkstra's Algorithm:</strong> Efficiently finds the shortest path step by step, ensuring accurate navigation or routing.</p>
+      <p><strong>2. Bellman-Ford Algorithm:</strong> Similar to Dijkstra’s but can also handle routes where costs can increase or decrease (e.g., discounts).</p>
+
+      <div class="example">
+        <h3>Example:</h3>
+        <p>A GPS app uses the shortest path algorithm to suggest the quickest route to a destination, avoiding traffic and minimizing travel time.</p>
+      </div>
+
+      <div class="benefits">
+        <h3>Key Benefits:</h3>
+        <ul>
+          <li>Saves time and fuel in transportation and logistics.</li>
+          <li>Improves real-time decision-making during emergencies.</li>
+          <li>Optimizes network data flow in computer systems.</li>
+        </ul>
+      </div>
+    </div>
   </section>
   </div>
 </body>
