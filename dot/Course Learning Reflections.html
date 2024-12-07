@@ -151,7 +151,7 @@
         <a href="#6">Trees vs Graphs</a>
         <a href="#7">Sorting & Searching</a>
         <a href="#8">Graph Algorithms</a>
-        <a href="#design-techniques">Design Techniques</a>
+        <a href="#9">Design Techniques</a>
         <a href="#optimization">Optimization Techniques</a>
         <a href="#nature-problems">Nature Problems</a>
         <a href="#efficiency">Space & Time Efficiency</a>
@@ -580,6 +580,68 @@
       </div>
     </div>
   </section>
+  </div>
+  <div class="container">
+    <section id=9>
+    <h1>Algorithm Design Techniques</h1>
+
+    <h2>1. Brute Force</h2>
+    <p><strong>What it is:</strong> Try every possible solution until you find the right one.</p>
+    <div class="example">
+      <p><strong>When to use:</strong> Works for small problems but gets slow with large ones.</p>
+      <p><strong>Example:</strong> Guessing a password by trying all combinations.</p>
+    </div>
+
+    <h2>2. Divide and Conquer</h2>
+    <p><strong>What it is:</strong> Break the problem into smaller parts, solve each part, and combine the results.</p>
+    <div class="example">
+      <p><strong>When to use:</strong> Great for problems that can be split into similar smaller problems.</p>
+      <p><strong>Example:</strong> Merge Sort (sorting a list of items).</p>
+    </div>
+
+    <h2>3. Greedy Algorithm</h2>
+    <p><strong>What it is:</strong> Make the best choice at each step, hoping it leads to the best overall solution.</p>
+    <div class="example">
+      <p><strong>When to use:</strong> Good for problems where local choices lead to an optimal global solution.</p>
+      <p><strong>Example:</strong> Finding the shortest path using Dijkstra's Algorithm.</p>
+    </div>
+
+    <h2>4. Dynamic Programming (DP)</h2>
+    <p><strong>What it is:</strong> Break the problem into smaller overlapping sub-problems, solve them, and store the results to avoid repeating work.</p>
+    <div class="example">
+      <p><strong>When to use:</strong> Used when solving the same sub-problem multiple times.</p>
+      <p><strong>Example:</strong> Fibonacci sequence, Knapsack problem.</p>
+    </div>
+
+    <h2>5. Backtracking</h2>
+    <p><strong>What it is:</strong> Try different options and backtrack if one doesn’t work, exploring all possible solutions.</p>
+    <div class="example">
+      <p><strong>When to use:</strong> Great for problems that involve decision-making, like puzzles.</p>
+      <p><strong>Example:</strong> Solving a maze or the N-Queens problem.</p>
+    </div>
+
+    <h2>6. Branch and Bound</h2>
+    <p><strong>What it is:</strong> Explore different solutions but prune unpromising paths to save time.</p>
+    <div class="example">
+      <p><strong>When to use:</strong> Used for optimization problems where we need the best solution.</p>
+      <p><strong>Example:</strong> Traveling Salesman Problem.</p>
+    </div>
+
+    <h2>7. Randomized Algorithms</h2>
+    <p><strong>What it is:</strong> Use random choices to guide the solution, often speeding things up.</p>
+    <div class="example">
+      <p><strong>When to use:</strong> Works when average performance is more important than perfect accuracy.</p>
+      <p><strong>Example:</strong> QuickSort (randomly picking a pivot).</p>
+    </div>
+
+    <h2>Real-World Applications</h2>
+    <ul>
+      <li><strong>Greedy Algorithms:</strong> Used for shortest path problems (e.g., GPS navigation).</li>
+      <li><strong>Dynamic Programming:</strong> Helps with optimizing schedules or resource management.</li>
+      <li><strong>Backtracking:</strong> Used in puzzles, games, and pathfinding.</li>
+      <li><strong>Branch and Bound:</strong> Used for job scheduling or optimization problems.</li>
+    </ul>
+    </section>
   </div>
 </body>
 </html>
