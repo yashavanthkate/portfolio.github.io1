@@ -9,51 +9,97 @@
       font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(to bottom, #f5f7fa, #dfe6e9);
+      background: linear-gradient(to bottom, #f5f7fa, #e3f2fd);
       color: #333;
     }
-
-    header {
+    nav {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr); /* 10 links per row */
+      gap: 5px;
+      padding: 10px;
       background: linear-gradient(135deg, #6a11cb, #2575fc);
-      color: white;
-      padding: 20px;
-      text-align: center;
       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+    nav a {
+      text-decoration: none;
+      color: white;
+      padding: 5px 5px;
+      border-radius: 20px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-align: center;
+      background: transparent;
+      transition: all 0.3s ease;
+      position: relative;
     }
 
+    nav a:hover {
+      color: #2575fc;
+      background: white;
+      transform: scale(1.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    nav a:before {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 3px;
+      bottom: 0;
+      left: 50%;
+      background-color: white;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover:before {
+      width: 100%;
+      left: 0;
+    }
+
+    nav a:active {
+      transform: scale(0.95);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Adjust layout for smaller screens */
+    @media (max-width: 768px) {
+      nav {
+        grid-template-columns: repeat(2, 1fr); /* 2 links per row for smaller screens */
+      }
+    }
     .container {
-      max-width: 900px;
+      max-width: auto;
       margin: 20px auto;
       padding: 20px;
       background: white;
       border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #6a11cb;
+      text-align: center;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
     }
 
     h2 {
-      font-size: 1.8rem;
-      color: #6a11cb;
-      margin-bottom: 10px;
-      border-bottom: 2px solid #2575fc;
-      display: inline-block;
-      padding-bottom: 5px;
+      font-size: 1.5rem;
+      color: #2575fc;
+      margin-top: 20px;
+      text-decoration: underline;
     }
 
     h3 {
-      font-size: 1.4rem;
-      color: #2575fc;
-      margin-top: 20px;
-    }
-
-    p {
-      font-size: 1rem;
-      line-height: 1.6;
-      color: #555;
+      font-size: 1.2rem;
+      color: #6a11cb;
+      margin-top: 15px;
     }
 
     ul {
@@ -68,43 +114,58 @@
     }
 
     ul li:before {
-      content: "🌳";
+      content: "🌿";
       position: absolute;
       left: 0;
       font-size: 1.2rem;
     }
 
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin: 10px 0;
+      color: #555;
+    }
+
     .example {
-      background: #e8f5e9;
-      border-left: 5px solid #4caf50;
+      background: #fbe9e7;
+      border-left: 5px solid #ff7043;
       padding: 10px 15px;
-      margin: 15px 0;
+      margin: 10px 0;
       border-radius: 8px;
     }
 
     .example p {
       margin: 0;
-      font-weight: bold;
-    }
-
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #6a11cb;
-      color: white;
-      margin-top: 20px;
-      box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    footer p {
-      margin: 0;
-      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-    <h1>Understanding Tree Data Structures</h1>
+  <nav>
+        <a href="hello.html">Nature Problems</a>
+        <a href="hii.html">Space & Time Efficiency</a>
+        <a href="#design-principles">Design Principles</a>
+        <a href="#trees">Tree Structures</a>
+        <a href="#array-algorithms">Array Queries</a>
+        <a href="#tree-vs-graph">Trees vs Graphs</a>
+        <a href="#sorting-searching">Sorting & Searching</a>
+        <a href="#graph-algorithms">Graph Algorithms</a>
+        <a href="#design-techniques">Design Techniques</a>
+        <a href="#optimization">Optimization Techniques</a>
+        <a href="#nature-problems">Nature Problems</a>
+        <a href="#efficiency">Space & Time Efficiency</a>
+        <a href="#design-principles">Design Principles</a>
+        <a href="#trees">Tree Structures</a>
+        <a href="#array-algorithms">Array Queries</a>
+        <a href="#tree-vs-graph">Trees vs Graphs</a>
+        <a href="#sorting-searching">Sorting & Searching</a>
+        <a href="#graph-algorithms">Graph Algorithms</a>
+        <a href="#design-techniques">Design Techniques</a>
+        <a href="#optimization">Optimization Techniques</a>
+      </nav>
   <div class="container">
+    <h1>Hierarchical Data and Tree Structures</h1>
+
     <h2>1. General Tree</h2>
     <p><strong>What it is:</strong> A tree where each node can have many children.</p>
     <p><strong>Best for:</strong> Organizing anything hierarchical, like a family tree or folder structure.</p>
@@ -140,17 +201,14 @@
     <p><strong>Best for:</strong> Autocomplete, dictionaries, or finding words by prefix.</p>
     <p><strong>Limitation:</strong> Uses more memory because of pointers.</p>
 
-    <div class="example">
-      <p>🌟 <strong>When to Use What:</strong></p>
-      <p>✔️ General structure or hierarchy: <strong>General Tree</strong></p>
-      <p>✔️ Fast search for sorted data: <strong>BST</strong> (if data isn’t messy).</p>
-      <p>✔️ Always balanced: <strong>AVL or Red-Black Tree</strong>.</p>
-      <p>✔️ Priority tasks: <strong>Heap</strong>.</p>
-      <p>✔️ Working with strings: <strong>Trie</strong>.</p>
-    </div>
+    <h2>When to Use What:</h2>
+    <ul>
+      <li><strong>Hierarchy or general structure:</strong> General Tree.</li>
+      <li><strong>Fast search for sorted data:</strong> BST (if data isn’t messy).</li>
+      <li><strong>Always balanced:</strong> AVL or Red-Black Tree.</li>
+      <li><strong>Priority-based tasks:</strong> Heap.</li>
+      <li><strong>Working with strings:</strong> Trie.</li>
+    </ul>
   </div>
-  <footer>
-    <p>© 2024 | Tree Data Structures Explained with Love 🌳</p>
-  </footer>
 </body>
 </html>
