@@ -9,10 +9,9 @@
       font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(to bottom, #f5f7fa, #c3cfe2);
+      background: linear-gradient(to bottom, #f5f7fa, #e3f2fd);
       color: #333;
     }
-
     nav {
       display: grid;
       grid-template-columns: repeat(10, 1fr); /* 10 links per row */
@@ -72,7 +71,6 @@
         grid-template-columns: repeat(2, 1fr); /* 2 links per row for smaller screens */
       }
     }
-
     .container {
       max-width: auto;
       margin: 20px auto;
@@ -80,7 +78,9 @@
       background: white;
       border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
 
     h1 {
       font-size: 2rem;
@@ -95,6 +95,12 @@
       color: #2575fc;
       margin-top: 20px;
       text-decoration: underline;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      color: #6a11cb;
+      margin-top: 15px;
     }
 
     ul {
@@ -114,74 +120,370 @@
       left: 0;
       font-size: 1.2rem;
     }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin: 10px 0;
+      color: #555;
+    }
+
+    .example {
+      background: #fbe9e7;
+      border-left: 5px solid #ff7043;
+      padding: 10px 15px;
+      margin: 10px 0;
+      border-radius: 8px;
+    }
+
+    .example p {
+      margin: 0;
+    }
   </style>
 </head>
 <body>
   <nav>
-    <a href="dsa/Nature Problems.html">Nature Problems</a>
-    <a href="dsa/Space and Time Efficiency.html">Space & Time Efficiency</a>
-    <a href="#design-principles">Design Principles</a>
-    <a href="dsa/Tree Structures.html">Tree Structures</a>
-    <a href="dsa/Array Queries.html">Array Queries</a>
-    <a href="dsa/Tree vs Graph.html">Trees vs Graphs</a>
-    <a href="#sorting-searching">Sorting & Searching</a>
-    <a href="#graph-algorithms">Graph Algorithms</a>
-    <a href="#design-techniques">Design Techniques</a>
-    <a href="#optimization">Optimization Techniques</a>
-    <a href="#nature-problems">Nature Problems</a>
-    <a href="#efficiency">Space & Time Efficiency</a>
-    <a href="#design-principles">Design Principles</a>
-    <a href="#trees">Tree Structures</a>
-    <a href="#array-algorithms">Array Queries</a>
-    <a href="#tree-vs-graph">Trees vs Graphs</a>
-    <a href="#sorting-searching">Sorting & Searching</a>
-    <a href="#graph-algorithms">Graph Algorithms</a>
-    <a href="#design-techniques">Design Techniques</a>
-    <a href="#optimization">Optimization Techniques</a>
-  </nav>
-
+        <a href="#1">Nature Problems</a>
+        <a href="#2">Space & Time Efficiency</a>
+        <a href="#design-principles">Design Principles</a>
+        <a href="#4">Tree Structures</a>
+        <a href="#5">Array Queries</a>
+        <a href="#6">Trees vs Graphs</a>
+        <a href="#7">Sorting & Searching</a>
+        <a href="#graph-algorithms">Graph Algorithms</a>
+        <a href="#design-techniques">Design Techniques</a>
+        <a href="#optimization">Optimization Techniques</a>
+        <a href="#nature-problems">Nature Problems</a>
+        <a href="#efficiency">Space & Time Efficiency</a>
+        <a href="#design-principles">Design Principles</a>
+        <a href="#trees">Tree Structures</a>
+        <a href="#array-algorithms">Array Queries</a>
+        <a href="#tree-vs-graph">Trees vs Graphs</a>
+        <a href="#sorting-searching">Sorting & Searching</a>
+        <a href="#graph-algorithms">Graph Algorithms</a>
+        <a href="#design-techniques">Design Techniques</a>
+        <a href="#optimization">Optimization Techniques</a>
+      </nav>
   <div class="container">
+    <section id=1>
     <h1>What are the Kinds of Problems We See in Nature?</h1>
     
-    <h2 id="iteration">1. Iteration Problems</h2>
+    <h2>1. Iteration Problems</h2>
+
     <h3>Examples in Nature</h3>
     <ul>
       <li>Iteration means repeating steps in a loop until the job is done.</li>
       <li>Think of the sun rising and setting every day—it’s a repeating cycle.</li>
       <li>Counting the rings on a tree to know its age—each ring is added one at a time over the years.</li>
     </ul>
+
     <h3>Examples in Coding</h3>
     <div class="example">
       <p>🔹 Going through a list to find the largest number.</p>
       <p>🔹 Adding all the numbers in a group (like calculating your total grocery bill).</p>
     </div>
 
-    <h2 id="recursion">2. Recursion Problems</h2>
+    <h2>2. Recursion Problems</h2>
+
     <h3>Examples in Nature</h3>
     <ul>
       <li>Recursion is when a problem solves itself in smaller steps until it’s complete.</li>
       <li>Imagine a tree: A branch splits into smaller branches, which split into even smaller branches.</li>
       <li>Think of how you fold a piece of paper in half repeatedly—it’s the same process over and over.</li>
     </ul>
+
     <h3>Examples in Coding</h3>
     <div class="example">
       <p>🔹 Calculating factorials (e.g., 5! = 5 × 4 × 3 × 2 × 1).</p>
       <p>🔹 Finding your way through a family tree or exploring nested folders on your computer.</p>
     </div>
 
-    <h2 id="backtracking">3. Backtracking Problems</h2>
+    <h2>3. Backtracking Problems</h2>
+
     <h3>Examples in Nature</h3>
     <ul>
       <li>Backtracking is like trial and error: you try a path, and if it doesn’t work, you go back and try another one.</li>
       <li>Picture an ant trying to find food—it explores one path, and if it’s blocked, it turns around and tries a different way.</li>
       <li>Solving a maze: If one route doesn’t work, you go back and try a new direction.</li>
     </ul>
+
     <h3>Examples in Coding</h3>
     <div class="example">
       <p>🔹 Solving puzzles like Sudoku.</p>
       <p>🔹 Finding all possible combinations, like arranging letters to form words.</p>
       <p>🔹 Figuring out the shortest route on a map.</p>
+    </section>
+  </div>
+      
+    <div class="Space and Time Efficiency">
+      <section id=2>
+    <h1>Space and Time Efficiency</h1>
+
+    <h2>Time Efficiency</h2>
+    <p>Time Efficiency is about how fast an algorithm runs. Imagine you’re baking a cake—time efficiency is how quickly you can finish baking.</p>
+
+    <h2>Space Efficiency</h2>
+    <p>Space Efficiency is about how much memory or storage an algorithm uses while running. It’s like how many bowls or tools you need to bake that cake. The fewer, the better.</p>
+
+    <h2>Why Are They Important?</h2>
+    <ul>
+      <li>Save Time: Faster algorithms mean less waiting.</li>
+      <li>Save Memory: Efficient algorithms don’t use too much computer memory, so your device won’t slow down or crash.</li>
+      <li>Handle Bigger Problems: Efficient algorithms can process large amounts of data without issues.</li>
+      <li>Better User Experience: Nobody likes apps or websites that are slow and laggy.</li>
+    </ul>
+
+    <h2>Types of Problems</h2>
+    <h3>Easy Problems (P)</h3>
+    <p>Problems that computers can solve quickly. For example, sorting a list of names or finding the shortest path on a map.</p>
+
+    <h3>Tricky Problems (NP)</h3>
+    <p>Harder to solve but easy to check, like solving a jigsaw puzzle.</p>
+
+    <h3>Super Tricky Problems (NP-Complete)</h3>
+    <p>The hardest puzzles. If we figure out a fast way to solve one of them, we can solve many other tricky problems just as fast.</p>
+
+    <h3>Impossible Problems (NP-Hard)</h3>
+    <p>Problems so tough that no one knows how to solve them efficiently—or even check the answer easily in some cases.</p>
+
+    <h2>Orders of Growth</h2>
+    <h3>O(1) – Constant Time</h3>
+    <p>No matter the size, it always takes the same time. Example: Picking the first book from a pile.</p>
+
+    <h3>O(log n) – Logarithmic Time</h3>
+    <p>Grows slowly as input increases. Example: Finding a name in a phone book (binary search).</p>
+
+    <h3>O(n) – Linear Time</h3>
+    <p>Time grows directly with input size. Example: Reading all the books in a stack one by one.</p>
+
+    <h3>O(n log n) – Linearithmic Time</h3>
+    <p>Grows a bit faster, often seen in efficient sorting methods. Example: Sorting your books by size.</p>
+
+    <h3>O(n²) – Quadratic Time</h3>
+    <p>Time grows really fast, usually when there are nested loops. Example: Comparing every book with every other book.</p>
+
+    <h3>O(2ⁿ) – Exponential Time</h3>
+    <p>Time doubles with each new piece of data. Example: Trying every possible combination of books to find the best arrangement.</p>
+
+    <h3>O(n!) – Factorial Time</h3>
+    <p>Time explodes! Example: Arranging 10 books in every possible order (10! = 3,628,800 ways).</p>
+      </section>
+  </div>
+
+  <div class="container">
+    <section id=4>
+    <h1>Hierarchical Data and Tree Structures</h1>
+
+    <h2>1. General Tree</h2>
+    <p><strong>What it is:</strong> A tree where each node can have many children.</p>
+    <p><strong>Best for:</strong> Organizing anything hierarchical, like a family tree or folder structure.</p>
+    <p><strong>Limitation:</strong> Slow for searching because it’s unstructured.</p>
+
+    <h2>2. Binary Search Tree (BST)</h2>
+    <p><strong>What it is:</strong> A tree where left = smaller values, and right = larger values.</p>
+    <p><strong>Best for:</strong> Fast searching, adding, and deleting (if the tree is balanced).</p>
+    <p><strong>Limitation:</strong> Can get unbalanced and slow if data is added in the wrong order.</p>
+
+    <h2>3. AVL Tree</h2>
+    <p><strong>What it is:</strong> A balanced version of a BST (always keeps its height small).</p>
+    <p><strong>Best for:</strong> Applications with frequent updates (e.g., databases).</p>
+    <p><strong>Limitation:</strong> A bit slower due to constant balancing (rotations).</p>
+
+    <h2>4. 2-3 Tree</h2>
+    <p><strong>What it is:</strong> A tree where nodes can hold 1 or 2 values and always stays balanced.</p>
+    <p><strong>Best for:</strong> File systems or databases that need consistent performance.</p>
+    <p><strong>Limitation:</strong> More complex than simpler BSTs.</p>
+
+    <h2>5. Red-Black Tree</h2>
+    <p><strong>What it is:</strong> A self-balancing BST that uses “red” and “black” node colors to stay balanced.</p>
+    <p><strong>Best for:</strong> Systems with lots of insert/delete operations (e.g., maps, dictionaries).</p>
+    <p><strong>Limitation:</strong> Slightly slower search than AVL, but faster updates.</p>
+
+    <h2>6. Heap</h2>
+    <p><strong>What it is:</strong> A special tree where the smallest (or largest) value is always at the top.</p>
+    <p><strong>Best for:</strong> Priority-based tasks (like scheduling or finding the best option quickly).</p>
+    <p><strong>Limitation:</strong> Only good for finding the top value; not ideal for general searching.</p>
+
+    <h2>7. Trie (Prefix Tree)</h2>
+    <p><strong>What it is:</strong> A tree for strings, where each level represents a character.</p>
+    <p><strong>Best for:</strong> Autocomplete, dictionaries, or finding words by prefix.</p>
+    <p><strong>Limitation:</strong> Uses more memory because of pointers.</p>
+
+    <h2>When to Use What:</h2>
+    <ul>
+      <li><strong>Hierarchy or general structure:</strong> General Tree.</li>
+      <li><strong>Fast search for sorted data:</strong> BST (if data isn’t messy).</li>
+      <li><strong>Always balanced:</strong> AVL or Red-Black Tree.</li>
+      <li><strong>Priority-based tasks:</strong> Heap.</li>
+      <li><strong>Working with strings:</strong> Trie.</li>
+    </ul>
+    </section>
+  </div>
+  <div class="container">
+    <section id=6>
+    <h1>Difference Between Tree and Graph</h1>
+    
+    <h2>1. Structure</h2>
+    <p><strong>Trees:</strong> A tree is like a <span class="tree">family tree</span>. There’s one main node at the top (the root), and every other node is connected in a clear parent-child relationship. Trees do not have loops or shortcuts.</p>
+    <p><strong>Graphs:</strong> A graph is more like a <span class="graph">road map</span>. It consists of nodes connected by edges, and you can have multiple ways to travel between nodes. Graphs may contain loops and cycles.</p>
+
+    <h2>2. Connection</h2>
+    <p><strong>Trees:</strong> Trees are always connected, meaning you can always reach every node from the root without any loops.</p>
+    <p><strong>Graphs:</strong> Graphs are more general and may contain disconnected components or loops.</p>
+
+    <h2>How Do We Move Through Them?</h2>
+
+    <div class="traversal">
+      <h3>Tree Traversals</h3>
+      <ul>
+        <li><strong>Pre-order:</strong> Visit the root, then left, then right.</li>
+        <li><strong>In-order:</strong> Visit the left, then root, then right (great for sorting).</li>
+        <li><strong>Post-order:</strong> Visit left, right, then root (used for tree deletions).</li>
+        <li><strong>Level-order:</strong> Visit nodes layer by layer from top to bottom.</li>
+      </ul>
     </div>
+
+    <div class="traversal">
+      <h3>Graph Traversals</h3>
+      <ul>
+        <li><strong>Depth-First Search (DFS):</strong> Explore as far as possible down one path before backtracking.</li>
+        <li><strong>Breadth-First Search (BFS):</strong> Explore all nearby nodes before moving further.</li>
+      </ul>
+    </div>
+
+    <h2>Where Are Trees and Graphs Used?</h2>
+
+    <h3>Applications of Trees</h3>
+    <ul>
+      <li><strong>Organizing Information:</strong> File systems (folders and subfolders), family trees.</li>
+      <li><strong>Searching Fast:</strong> Binary Search Trees (BST) allow fast searches (e.g., dictionary lookups).</li>
+      <li><strong>Game Strategies:</strong> AI for decision-making in games like chess.</li>
+      <li><strong>Parsing Data:</strong> Trees are used to evaluate expressions like formulas.</li>
+    </ul>
+
+    <h3>Applications of Graphs</h3>
+    <ul>
+      <li><strong>Social Networks:</strong> People as nodes and friendships as edges.</li>
+      <li><strong>Maps:</strong> Cities as nodes and roads as edges (used in GPS).</li>
+      <li><strong>Internet:</strong> Websites as nodes and hyperlinks as edges for search engines.</li>
+      <li><strong>Routing Networks:</strong> Used in computer networks and delivery systems.</li>
+    </ul>
+    </section>
+  </div>
+  <div class="container">
+    <section id=5>
+    <h1>Tree Data Structures</h1>
+
+    <h2>1. General Tree</h2>
+    <p><strong>What it is:</strong> A tree where each node can have many children.</p>
+    <p><strong>Best for:</strong> Organizing hierarchical data, like family trees or folder structures.</p>
+    <p><strong>Limitation:</strong> Searching can be slow because the tree is unstructured.</p>
+
+    <h2>2. Binary Search Tree (BST)</h2>
+    <p><strong>What it is:</strong> A tree where the left child contains smaller values and the right child contains larger values.</p>
+    <p><strong>Best for:</strong> Fast searching, adding, and deleting when the tree is balanced.</p>
+    <p><strong>Limitation:</strong> Can become unbalanced and slow if elements are inserted in the wrong order.</p>
+
+    <h2>3. AVL Tree</h2>
+    <p><strong>What it is:</strong> A balanced version of a BST that maintains a small height.</p>
+    <p><strong>Best for:</strong> Applications with frequent updates, like databases.</p>
+    <p><strong>Limitation:</strong> Slightly slower due to constant balancing and rotations.</p>
+
+    <h2>4. 2-3 Tree</h2>
+    <p><strong>What it is:</strong> A tree where each node can hold 1 or 2 values, and it stays balanced at all times.</p>
+    <p><strong>Best for:</strong> File systems or databases that require consistent performance.</p>
+    <p><strong>Limitation:</strong> More complex than simpler BSTs.</p>
+
+    <h2>5. Red-Black Tree</h2>
+    <p><strong>What it is:</strong> A self-balancing BST that uses red and black nodes to maintain balance.</p>
+    <p><strong>Best for:</strong> Systems with many insertions and deletions (e.g., maps, dictionaries).</p>
+    <p><strong>Limitation:</strong> Slightly slower search times compared to AVL trees but faster updates.</p>
+
+    <h2>6. Heap</h2>
+    <p><strong>What it is:</strong> A special tree where the smallest (or largest) value is always at the top.</p>
+    <p><strong>Best for:</strong> Priority-based tasks like scheduling or finding the best option quickly.</p>
+    <p><strong>Limitation:</strong> Only efficient for finding the top value, not for general searching.</p>
+
+    <h2>7. Trie (Prefix Tree)</h2>
+    <p><strong>What it is:</strong> A tree specifically for storing strings, where each level represents a character.</p>
+    <p><strong>Best for:</strong> Autocomplete, dictionary lookups, or finding words by prefix.</p>
+    <p><strong>Limitation:</strong> Requires more memory due to pointers.</p>
+
+    <h2>When to Use Each Tree</h2>
+    <ul>
+      <li><strong>General structure or hierarchy:</strong> General Tree.</li>
+      <li><strong>Fast search for sorted data:</strong> Binary Search Tree (if data isn’t messy).</li>
+      <li><strong>Always balanced:</strong> AVL or Red-Black Tree.</li>
+      <li><strong>Priority-based tasks:</strong> Heap.</li>
+      <li><strong>Working with strings:</strong> Trie.</li>
+    </ul>
+  </section>
+  </div>
+  <div class="container">
+    <section id=7>
+    <h1>Graph Algorithms: Spanning Trees & Shortest Paths</h1>
+
+    <!-- Spanning Trees Section -->
+    <div class="spanning-trees">
+      <h2>Spanning Trees</h2>
+      <p><strong>What is it?</strong> A spanning tree is a way to connect all points (nodes) in a graph using the least number of connections (edges), avoiding loops.</p>
+
+      <h3>Real-World Uses:</h3>
+      <ul>
+        <li>Minimizing the cost of building roads, cables, or pipelines between cities.</li>
+        <li>Designing electricity grids to ensure all homes are connected efficiently.</li>
+        <li>Building railway networks with the least material or cost.</li>
+      </ul>
+
+      <h3>Algorithms:</h3>
+      <p><strong>1. Prim's Algorithm:</strong> Starts with a single point and keeps adding the smallest connection to grow the network.</p>
+      <p><strong>2. Kruskal's Algorithm:</strong> Picks the smallest connections first, ensuring everything connects without loops.</p>
+
+      <div class="example">
+        <h3>Example:</h3>
+        <p>Imagine you need to connect four cities with the least cost. A spanning tree will ensure you use the minimum number of roads, saving resources.</p>
+      </div>
+
+      <div class="benefits">
+        <h3>Key Benefits:</h3>
+        <ul>
+          <li>Reduces construction costs for large networks like electricity grids or internet cables.</li>
+          <li>Ensures efficient resource usage in real-world projects.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Shortest Paths Section -->
+    <div class="shortest-paths">
+      <h2>Shortest Paths</h2>
+      <p><strong>What is it?</strong> The shortest path in a graph is the minimum distance or cost required to travel between two points.</p>
+
+      <h3>Real-World Uses:</h3>
+      <ul>
+        <li><strong>Navigation:</strong> GPS apps like Google Maps calculate the fastest or shortest route to your destination.</li>
+        <li><strong>Delivery optimization:</strong> Companies like Amazon plan the quickest delivery routes to save time and fuel.</li>
+        <li><strong>Emergency services:</strong> Ambulances find the fastest way to reach patients during critical moments.</li>
+      </ul>
+
+      <h3>Algorithms:</h3>
+      <p><strong>1. Dijkstra's Algorithm:</strong> Efficiently finds the shortest path step by step, ensuring accurate navigation or routing.</p>
+      <p><strong>2. Bellman-Ford Algorithm:</strong> Similar to Dijkstra’s but can also handle routes where costs can increase or decrease (e.g., discounts).</p>
+
+      <div class="example">
+        <h3>Example:</h3>
+        <p>A GPS app uses the shortest path algorithm to suggest the quickest route to a destination, avoiding traffic and minimizing travel time.</p>
+      </div>
+
+      <div class="benefits">
+        <h3>Key Benefits:</h3>
+        <ul>
+          <li>Saves time and fuel in transportation and logistics.</li>
+          <li>Improves real-time decision-making during emergencies.</li>
+          <li>Optimizes network data flow in computer systems.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
   </div>
 </body>
 </html>
