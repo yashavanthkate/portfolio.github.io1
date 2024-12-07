@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tree Data Structures</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #f5f7fa, #dfe6e9);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: #6a11cb;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #2575fc;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      color: #2575fc;
+      margin-top: 20px;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin: 10px 0;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    ul li:before {
+      content: "🌳";
+      position: absolute;
+      left: 0;
+      font-size: 1.2rem;
+    }
+
+    .example {
+      background: #e8f5e9;
+      border-left: 5px solid #4caf50;
+      padding: 10px 15px;
+      margin: 15px 0;
+      border-radius: 8px;
+    }
+
+    .example p {
+      margin: 0;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #6a11cb;
+      color: white;
+      margin-top: 20px;
+      box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Understanding Tree Data Structures</h1>
+  </header>
+  <div class="container">
+    <h2>1. General Tree</h2>
+    <p><strong>What it is:</strong> A tree where each node can have many children.</p>
+    <p><strong>Best for:</strong> Organizing anything hierarchical, like a family tree or folder structure.</p>
+    <p><strong>Limitation:</strong> Slow for searching because it’s unstructured.</p>
+
+    <h2>2. Binary Search Tree (BST)</h2>
+    <p><strong>What it is:</strong> A tree where left = smaller values, and right = larger values.</p>
+    <p><strong>Best for:</strong> Fast searching, adding, and deleting (if the tree is balanced).</p>
+    <p><strong>Limitation:</strong> Can get unbalanced and slow if data is added in the wrong order.</p>
+
+    <h2>3. AVL Tree</h2>
+    <p><strong>What it is:</strong> A balanced version of a BST (always keeps its height small).</p>
+    <p><strong>Best for:</strong> Applications with frequent updates (e.g., databases).</p>
+    <p><strong>Limitation:</strong> A bit slower due to constant balancing (rotations).</p>
+
+    <h2>4. 2-3 Tree</h2>
+    <p><strong>What it is:</strong> A tree where nodes can hold 1 or 2 values and always stays balanced.</p>
+    <p><strong>Best for:</strong> File systems or databases that need consistent performance.</p>
+    <p><strong>Limitation:</strong> More complex than simpler BSTs.</p>
+
+    <h2>5. Red-Black Tree</h2>
+    <p><strong>What it is:</strong> A self-balancing BST that uses “red” and “black” node colors to stay balanced.</p>
+    <p><strong>Best for:</strong> Systems with lots of insert/delete operations (e.g., maps, dictionaries).</p>
+    <p><strong>Limitation:</strong> Slightly slower search than AVL, but faster updates.</p>
+
+    <h2>6. Heap</h2>
+    <p><strong>What it is:</strong> A special tree where the smallest (or largest) value is always at the top.</p>
+    <p><strong>Best for:</strong> Priority-based tasks (like scheduling or finding the best option quickly).</p>
+    <p><strong>Limitation:</strong> Only good for finding the top value; not ideal for general searching.</p>
+
+    <h2>7. Trie (Prefix Tree)</h2>
+    <p><strong>What it is:</strong> A tree for strings, where each level represents a character.</p>
+    <p><strong>Best for:</strong> Autocomplete, dictionaries, or finding words by prefix.</p>
+    <p><strong>Limitation:</strong> Uses more memory because of pointers.</p>
+
+    <div class="example">
+      <p>🌟 <strong>When to Use What:</strong></p>
+      <p>✔️ General structure or hierarchy: <strong>General Tree</strong></p>
+      <p>✔️ Fast search for sorted data: <strong>BST</strong> (if data isn’t messy).</p>
+      <p>✔️ Always balanced: <strong>AVL or Red-Black Tree</strong>.</p>
+      <p>✔️ Priority tasks: <strong>Heap</strong>.</p>
+      <p>✔️ Working with strings: <strong>Trie</strong>.</p>
+    </div>
+  </div>
+  <footer>
+    <p>© 2024 | Tree Data Structures Explained with Love 🌳</p>
+  </footer>
+</body>
+</html>
