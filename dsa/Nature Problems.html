@@ -146,7 +146,7 @@
         <a href="#Nature Problems">Nature Problems</a>
         <a href="#Space and Time Efficiency">Space & Time Efficiency</a>
         <a href="#design-principles">Design Principles</a>
-        <a href="Tree Structures.html">Tree Structures</a>
+        <a href="#Tree Structures">Tree Structures</a>
         <a href="#array-algorithms">Array Queries</a>
         <a href="Tree Structures.html">Trees vs Graphs</a>
         <a href="#sorting-searching">Sorting & Searching</a>
@@ -216,7 +216,7 @@
   </div>
       
     <div class="Space and Time Efficiency">
-      <section id Space and Time Efficiancy">
+      <section id="Space and Time Efficiancy">
     <h1>Space and Time Efficiency</h1>
 
     <h2>Time Efficiency</h2>
@@ -270,6 +270,55 @@
       </section>
   </div>
 
+  <div class="container">
+    <section id="Tree Structures">
+    <h1>Hierarchical Data and Tree Structures</h1>
+
+    <h2>1. General Tree</h2>
+    <p><strong>What it is:</strong> A tree where each node can have many children.</p>
+    <p><strong>Best for:</strong> Organizing anything hierarchical, like a family tree or folder structure.</p>
+    <p><strong>Limitation:</strong> Slow for searching because it’s unstructured.</p>
+
+    <h2>2. Binary Search Tree (BST)</h2>
+    <p><strong>What it is:</strong> A tree where left = smaller values, and right = larger values.</p>
+    <p><strong>Best for:</strong> Fast searching, adding, and deleting (if the tree is balanced).</p>
+    <p><strong>Limitation:</strong> Can get unbalanced and slow if data is added in the wrong order.</p>
+
+    <h2>3. AVL Tree</h2>
+    <p><strong>What it is:</strong> A balanced version of a BST (always keeps its height small).</p>
+    <p><strong>Best for:</strong> Applications with frequent updates (e.g., databases).</p>
+    <p><strong>Limitation:</strong> A bit slower due to constant balancing (rotations).</p>
+
+    <h2>4. 2-3 Tree</h2>
+    <p><strong>What it is:</strong> A tree where nodes can hold 1 or 2 values and always stays balanced.</p>
+    <p><strong>Best for:</strong> File systems or databases that need consistent performance.</p>
+    <p><strong>Limitation:</strong> More complex than simpler BSTs.</p>
+
+    <h2>5. Red-Black Tree</h2>
+    <p><strong>What it is:</strong> A self-balancing BST that uses “red” and “black” node colors to stay balanced.</p>
+    <p><strong>Best for:</strong> Systems with lots of insert/delete operations (e.g., maps, dictionaries).</p>
+    <p><strong>Limitation:</strong> Slightly slower search than AVL, but faster updates.</p>
+
+    <h2>6. Heap</h2>
+    <p><strong>What it is:</strong> A special tree where the smallest (or largest) value is always at the top.</p>
+    <p><strong>Best for:</strong> Priority-based tasks (like scheduling or finding the best option quickly).</p>
+    <p><strong>Limitation:</strong> Only good for finding the top value; not ideal for general searching.</p>
+
+    <h2>7. Trie (Prefix Tree)</h2>
+    <p><strong>What it is:</strong> A tree for strings, where each level represents a character.</p>
+    <p><strong>Best for:</strong> Autocomplete, dictionaries, or finding words by prefix.</p>
+    <p><strong>Limitation:</strong> Uses more memory because of pointers.</p>
+
+    <h2>When to Use What:</h2>
+    <ul>
+      <li><strong>Hierarchy or general structure:</strong> General Tree.</li>
+      <li><strong>Fast search for sorted data:</strong> BST (if data isn’t messy).</li>
+      <li><strong>Always balanced:</strong> AVL or Red-Black Tree.</li>
+      <li><strong>Priority-based tasks:</strong> Heap.</li>
+      <li><strong>Working with strings:</strong> Trie.</li>
+    </ul>
+    </section>
+  </div>
   </div>
 </body>
 </html>
