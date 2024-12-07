@@ -272,7 +272,7 @@
 
   <div class="container">
     <section id=4>
-    <h1>Hierarchical Data and Tree Structures</h1>
+    <h1>Tree Data Structures</h1>
 
     <h2>1. General Tree</h2>
     <p><strong>What it is:</strong> A tree where each node can have many children.</p>
@@ -371,55 +371,6 @@
     </section>
   </div>
   <div class="container">
-    <section id=5>
-    <h1>Tree Data Structures</h1>
-
-    <h2>1. General Tree</h2>
-    <p><strong>What it is:</strong> A tree where each node can have many children.</p>
-    <p><strong>Best for:</strong> Organizing hierarchical data, like family trees or folder structures.</p>
-    <p><strong>Limitation:</strong> Searching can be slow because the tree is unstructured.</p>
-
-    <h2>2. Binary Search Tree (BST)</h2>
-    <p><strong>What it is:</strong> A tree where the left child contains smaller values and the right child contains larger values.</p>
-    <p><strong>Best for:</strong> Fast searching, adding, and deleting when the tree is balanced.</p>
-    <p><strong>Limitation:</strong> Can become unbalanced and slow if elements are inserted in the wrong order.</p>
-
-    <h2>3. AVL Tree</h2>
-    <p><strong>What it is:</strong> A balanced version of a BST that maintains a small height.</p>
-    <p><strong>Best for:</strong> Applications with frequent updates, like databases.</p>
-    <p><strong>Limitation:</strong> Slightly slower due to constant balancing and rotations.</p>
-
-    <h2>4. 2-3 Tree</h2>
-    <p><strong>What it is:</strong> A tree where each node can hold 1 or 2 values, and it stays balanced at all times.</p>
-    <p><strong>Best for:</strong> File systems or databases that require consistent performance.</p>
-    <p><strong>Limitation:</strong> More complex than simpler BSTs.</p>
-
-    <h2>5. Red-Black Tree</h2>
-    <p><strong>What it is:</strong> A self-balancing BST that uses red and black nodes to maintain balance.</p>
-    <p><strong>Best for:</strong> Systems with many insertions and deletions (e.g., maps, dictionaries).</p>
-    <p><strong>Limitation:</strong> Slightly slower search times compared to AVL trees but faster updates.</p>
-
-    <h2>6. Heap</h2>
-    <p><strong>What it is:</strong> A special tree where the smallest (or largest) value is always at the top.</p>
-    <p><strong>Best for:</strong> Priority-based tasks like scheduling or finding the best option quickly.</p>
-    <p><strong>Limitation:</strong> Only efficient for finding the top value, not for general searching.</p>
-
-    <h2>7. Trie (Prefix Tree)</h2>
-    <p><strong>What it is:</strong> A tree specifically for storing strings, where each level represents a character.</p>
-    <p><strong>Best for:</strong> Autocomplete, dictionary lookups, or finding words by prefix.</p>
-    <p><strong>Limitation:</strong> Requires more memory due to pointers.</p>
-
-    <h2>When to Use Each Tree</h2>
-    <ul>
-      <li><strong>General structure or hierarchy:</strong> General Tree.</li>
-      <li><strong>Fast search for sorted data:</strong> Binary Search Tree (if data isn’t messy).</li>
-      <li><strong>Always balanced:</strong> AVL or Red-Black Tree.</li>
-      <li><strong>Priority-based tasks:</strong> Heap.</li>
-      <li><strong>Working with strings:</strong> Trie.</li>
-    </ul>
-  </section>
-  </div>
-  <div class="container">
     <section id=7>
     <h1>Graph Algorithms: Spanning Trees & Shortest Paths</h1>
 
@@ -485,5 +436,72 @@
     </div>
   </section>
   </div>
+  <div class="container">
+    <section id=5>
+    <h1>Array Query Algorithms: Need, Types, and Applications</h1>
+
+    <h2>What Are Array Query Algorithms?</h2>
+    <p>Array query algorithms help us efficiently retrieve or update data from an array, enabling faster responses to repeated operations.</p>
+    
+    <h3>Common Array Queries:</h3>
+    <ul>
+      <li>Find the sum of numbers in a specific part of the list.</li>
+      <li>Find the largest or smallest number in a section of the list.</li>
+      <li>Update a value at a specific index in the list.</li>
+    </ul>
+
+    <h2>Why Do We Need These Algorithms?</h2>
+    <p><strong>Speed:</strong> Without these algorithms, we'd have to check every number in the list, which can be slow—especially for large datasets.</p>
+    <p><strong>Efficiency:</strong> These algorithms make sure that you can get answers in a fraction of the time, even with huge datasets.</p>
+    <p>They’re crucial for real-time applications, such as live sports score tracking or financial market analysis.</p>
+
+    <h2>Types of Array Query Algorithms</h2>
+
+    <h3>1. Prefix Sum (Cumulative Sum)</h3>
+    <p><strong>What it does:</strong> It calculates the sum of all elements from the start of the list to each point, allowing fast sum queries.</p>
+    <div class="example">
+      <p><strong>Example:</strong> Want the sum of numbers from position 3 to position 5? With prefix sums, you can get it instantly!</p>
+    </div>
+
+    <h3>2. Segment Tree</h3>
+    <p><strong>What it does:</strong> Helps manage data in sections and allows fast queries like sum, max, or min for specific segments of the list.</p>
+    <div class="example">
+      <p><strong>Example:</strong> In gaming, you may need to find the highest score between level 10 and level 20. A segment tree answers this quickly.</p>
+    </div>
+
+    <h3>3. Binary Indexed Tree (BIT)</h3>
+    <p><strong>What it does:</strong> Similar to segment trees but optimized for efficient updates and queries on dynamic datasets.</p>
+    <div class="example">
+      <p><strong>Example:</strong> Updating a leaderboard's score and instantly getting the total score.</p>
+    </div>
+
+    <h3>4. Sparse Table</h3>
+    <p><strong>What it does:</strong> Efficiently answers range queries like finding the minimum or maximum, especially when the list doesn’t change often.</p>
+    <div class="example">
+      <p><strong>Example:</strong> Finding the lowest temperature in a city for the past month when the data doesn't change often.</p>
+    </div>
+
+    <h2>Where Are These Algorithms Used?</h2>
+    <ul>
+      <li><strong>Financial Data:</strong> Quickly calculate stock prices or sales transactions over a specific period.</li>
+      <li><strong>Gaming:</strong> Track player scores, health points, or resources in different levels.</li>
+      <li><strong>Search Engines:</strong> Optimize data retrieval from large datasets or databases.</li>
+      <li><strong>Real-Time Systems:</strong> Critical for applications requiring instant feedback, such as live sports scores.</li>
+    </ul>
+
+    <h2>How Do These Algorithms Work?</h2>
+    <p><strong>Preprocessing:</strong> Algorithms like prefix sum require preprocessing, but once set up, they provide quick answers.</p>
+    <p><strong>Efficient Searching:</strong> Segment trees and BIT allow querying in just a few steps, even for large lists.</p>
+    <p><strong>Updating Data:</strong> For frequently updated lists, these algorithms ensure that queries remain efficient even after updates.</p>
+
+    <div class="important">
+      <h3>Key Takeaways:</h3>
+      <ul>
+        <li>Array query algorithms make large data handling fast and efficient.</li>
+        <li>They play a significant role in applications requiring quick data access or updates, like gaming or financial analysis.</li>
+      </ul>
+    </div>
+  </secction>
+    </div>
 </body>
 </html>
