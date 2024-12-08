@@ -152,17 +152,17 @@
         <a href="#7">Sorting & Searching</a>
         <a href="#8">Graph Algorithms</a>
         <a href="#9">Design Techniques</a>
-        <a href="#optimization">Optimization Techniques</a>
-        <a href="#nature-problems">Nature Problems</a>
-        <a href="#efficiency">Space & Time Efficiency</a>
-        <a href="#design-principles">Design Principles</a>
-        <a href="#trees">Tree Structures</a>
-        <a href="#array-algorithms">Array Queries</a>
-        <a href="#tree-vs-graph">Trees vs Graphs</a>
-        <a href="#sorting-searching">Sorting & Searching</a>
-        <a href="#graph-algorithms">Graph Algorithms</a>
-        <a href="#design-techniques">Design Techniques</a>
-        <a href="#optimization">Optimization Techniques</a>
+        <a href="#10">Efficient Solutions</a>
+        <a href="#11">Balancing Constraints</a>
+        <a href="#12">Evaluating Solutions</a>
+        <a href="#13">Adapting Solutions</a>
+        <a href="#14">Identifying Patterns</a>
+        <a href="#15">Simplicity vs Optimization</a>
+        <a href="#16">Breaking Down Problems</a>
+        <a href="#17">Trade Offs in Solutions:</a>
+        <a href="#18">Addressing Limitations</a>
+        <a href="#19">Applying Knowledge Across Contexts</a>
+        <a href="#20">Innovate vs Tested Solutions</a>
       </nav>
   <div class="container">
     <section id=1>
@@ -642,6 +642,45 @@
       <li><strong>Branch and Bound:</strong> Used for job scheduling or optimization problems.</li>
     </ul>
     </section>
+  </div>
+  <div class="container">
+    <section id=10>
+    <h1>How to Solve a Problem</h1>
+    
+    <h2>1. Understand the Problem</h2>
+    <p><span class="highlight">What is the goal?</span> Clearly define what you're trying to achieve.</p>
+    <p><span class="highlight">What are the limits?</span> Consider time, memory, and the size of the inputs.</p>
+    <div class="example">
+      <p><strong>Example:</strong> Are you finding the shortest path, sorting a list, or exploring possibilities?</p>
+    </div>
+
+    <h2>2. Match the Problem to a Technique</h2>
+    <ul>
+      <li><strong>Small problems:</strong> Use <em>Brute Force</em> (try everything).</li>
+      <li><strong>Break into smaller parts:</strong> Use <em>Divide and Conquer</em> (e.g., Merge Sort).</li>
+      <li><strong>Optimize results:</strong> Use <em>Greedy Algorithms</em> (e.g., shortest route in GPS).</li>
+      <li><strong>Re-use solutions:</strong> Use <em>Dynamic Programming</em> (e.g., Fibonacci).</li>
+      <li><strong>Explore all options:</strong> Use <em>Backtracking</em> (e.g., solving a maze).</li>
+    </ul>
+
+    <h2>3. Check Efficiency</h2>
+    <div class="tips">
+      <p><strong>Time:</strong> How fast does the solution need to be? Avoid slow methods like Brute Force for large problems.</p>
+      <p><strong>Space:</strong> How much memory can it use? Some techniques (e.g., Dynamic Programming) need more memory.</p>
+    </div>
+
+    <h2>4. Test and Improve</h2>
+    <p>Start with a simple solution and <strong>test it thoroughly</strong>.</p>
+    <p>If it’s too slow or uses too much memory, <strong>switch to a better method</strong>.</p>
+
+    <div class="example">
+      <p><strong>Example:</strong> Finding the shortest path on a map:</p>
+      <ul>
+        <li>Use <strong>Dijkstra’s Algorithm</strong> for fast results when all weights are positive.</li>
+        <li>Use <strong>Bellman-Ford</strong> if negative weights exist.</li>
+      </ul>
+    </div>
+  </section>
   </div>
 </body>
 </html>
