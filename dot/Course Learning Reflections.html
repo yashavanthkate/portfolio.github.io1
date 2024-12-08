@@ -17,8 +17,8 @@
       grid-template-columns: repeat(10, 1fr); /* 10 links per row */
       gap: 5px;
       padding: 10px;
-      background: linear-gradient(135deg, #6a11cb, #2575fc);
-      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      background: linear-gradient(135deg, #333, #555);
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
       position: sticky;
       top: 0;
       z-index: 10;
@@ -26,22 +26,23 @@
 
     nav a {
       text-decoration: none;
-      color: white;
+      color: #fff;
       padding: 5px 5px;
       border-radius: 20px;
       font-size: 1rem;
       font-weight: bold;
       text-align: center;
-      background: transparent;
-      transition: all 0.3s ease;
+      background-color: transparent;
+      transition: all 0.3s ease-in-out;
       position: relative;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     }
 
     nav a:hover {
-      color: #2575fc;
-      background: white;
-      transform: scale(1.1);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      color: #ff6f61;
+      background-color: #222;
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
     }
 
     nav a:before {
@@ -51,7 +52,7 @@
       height: 3px;
       bottom: 0;
       left: 50%;
-      background-color: white;
+      background-color: #ff6f61;
       transition: all 0.3s ease;
     }
 
@@ -61,8 +62,8 @@
     }
 
     nav a:active {
-      transform: scale(0.95);
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+      transform: scale(0.98);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     }
 
     /* Adjust layout for smaller screens */
