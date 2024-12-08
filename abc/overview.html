@@ -27,6 +27,36 @@
       background: #f0f4f8;
       box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
     }
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .team-member {
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .team-member:hover {
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+      transform: scale(1.05);
+    }
+
+    .team-member h3 {
+      font-size: 1.4rem;
+      color: #1e2a47;
+      margin-bottom: 5px;
+    }
+
+    .team-member p {
+      font-size: 1rem;
+      color: #666;
+    }
     nav {
       display: flex;
       justify-content: center;
