@@ -152,9 +152,93 @@
                     <li>11.3.3: Percentage of population living in adequately planned urban areas.</li>
                 </ul>
             </div>
-            <button onclick="window.location.href='#'" style="background-color:#009688; color:white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Learn More</button>
         </div>
     </div>
+    <div class="container">
+      <!-- Population Forecasting -->
+      <div class="section">
+          <h2>1. Population Forecasting using Trie and Hashing</h2>
+          <p><h3>Idea:</h3> Predict future population trends in specific regions by analyzing demographic data efficiently.</p>
+          <h3>Description:</h3>
+          <p><strong>Trie Structure:</strong><br>
+             - Root node: "Population Data."<br>
+             - Child nodes: Regions (e.g., Country, State, City).<br>
+             - Further levels: Demographic factors (e.g., Age, Gender, Occupation, Income).<br>
+             - Store historical population data within the Trie structure.
+          </p>
+          <p><strong>Hashing:</strong><br>
+             - Use a hash table to map demographic factors (keys) to their corresponding population statistics (values).<br>
+             - Enables quick lookups for specific demographic groups.
+          </p>
+          <h3>Implementation Benefits:</h3>
+          <ul>
+              <li>Efficient data retrieval: Quickly access historical population data for specific regions and demographics.</li>
+              <li>Accurate forecasting: Utilize historical data to predict future population trends based on various factors.</li>
+              <li>Targeted interventions: Design and implement population-specific policies and programs (e.g., healthcare, education).</li>
+          </ul>
+          <h2>2. Resource Allocation using Greedy Technique and Dijkstra's Algorithm</h2>
+          <p><h3>Idea:</h3> Optimize the allocation of resources (e.g., healthcare, education, infrastructure) across a population to maximize efficiency and minimize inequalities.</p>
+          <h3>Description:</h3>
+          <p><strong>Graph Construction:</strong><br>
+             - Nodes: Represent population centers (e.g., cities, towns).<br>
+             - Edges: Represent connections between centers, weighted by factors like distance, population density, and resource demand.
+          </p>
+          <p><strong>Dijkstra's Algorithm:</strong><br>
+             - Determine the most efficient routes for resource delivery (e.g., ambulances, school buses).
+          </p>
+          <p><strong>Greedy Technique:</strong><br>
+             - Prioritize resource allocation to areas with the highest need (e.g., areas with high infant mortality rates, low literacy rates).
+          </p>
+          <h3>Implementation Benefits:</h3>
+          <ul>
+              <li>Improved resource utilization: Ensure resources reach those who need them most efficiently.</li>
+              <li>Reduced inequality: Minimize disparities in access to essential services across the population.</li>
+              <li>Cost-effectiveness: Optimize resource allocation to maximize impact with limited budgets.</li>
+          </ul>
+          <h2>3. Healthcare Optimization using Dynamic Programming (DP)</h2>
+          <p><h3>Idea:</h3> Optimize healthcare resource allocation and treatment plans for individuals and populations to improve health outcomes and reduce costs.</p>
+          <h3>Description:</h3>
+          <p><strong>DP Objective:</strong><br>
+             - Minimize healthcare costs (e.g., hospital stays, medication) while maximizing health outcomes (e.g., life expectancy, quality of life).
+          </p>
+          <p><strong>Implementation:</strong><br>
+             - Develop optimal treatment plans considering factors like patient health history, available resources, and treatment options.
+          </p>
+          <h3>Implementation Benefits:</h3>
+          <ul>
+              <li>Personalized treatment plans: Tailor healthcare interventions to individual patient needs.</li>
+              <li>Improved health outcomes: Achieve better health outcomes with optimized resource allocation.</li>
+              <li>Reduced healthcare costs: Minimize unnecessary expenses and improve cost-effectiveness.</li>
+          </ul>
+          <h2>4. Social Welfare Optimization using Backtracking</h2>
+          <p><h3>Idea:</h3> Design social welfare programs that maximize impact while ensuring equitable distribution of benefits across the population.</p>
+          <h3>Description:</h3>
+          <p><strong>Backtracking:</strong><br>
+             - Explore different program designs and eligibility criteria.<br>
+             - Backtrack and refine solutions to ensure they meet specific objectives (e.g., poverty reduction, social inclusion).
+          </p>
+          <h3>Implementation Benefits:</h3>
+          <ul>
+              <li>Targeted and effective programs: Design programs that effectively address specific social challenges.</li>
+              <li>Fair and equitable distribution: Ensure benefits reach the most vulnerable populations.</li>
+              <li>Improved social outcomes: Achieve positive social and economic outcomes for the population.</li>
+          </ul>
+          <h2>5. Epidemic Control using Lazy Propagation and Fenwick Tree</h2>
+          <p><h3>Idea:</h3> Monitor and control the spread of infectious diseases within a population using efficient data structures.</p>
+          <h3>Description:</h3>
+          <p><strong>Lazy Propagation:</strong><br>
+             - Update infection rates only when significant changes occur (e.g., new outbreaks, containment measures).
+          </p>
+          <p><strong>Fenwick Tree:</strong><br>
+             - Maintain cumulative infection data for regions to quickly identify hotspots and track disease spread.
+          </p>
+          <h3>Implementation Benefits:</h3>
+          <ul>
+              <li>Real-time monitoring: Track the spread of diseases in near real-time.</li>
+              <li>Targeted interventions: Quickly identify and respond to outbreaks in specific regions.</li>
+              <li>Improved disease control: Implement effective containment measures and minimize the impact of epidemics.</li>
+          </ul>
+      </div>
     <div class="container">
         <!-- Target 11.6 -->
         <div class="section">
@@ -191,91 +275,6 @@
         </div>
 
     </div>
-    <div class="container">
-        <!-- Population Forecasting -->
-        <div class="section">
-            <h2>1. Population Forecasting using Trie and Hashing</h2>
-            <p><h3>Idea:</h3> Predict future population trends in specific regions by analyzing demographic data efficiently.</p>
-            <h3>Description:</h3>
-            <p><strong>Trie Structure:</strong><br>
-               - Root node: "Population Data."<br>
-               - Child nodes: Regions (e.g., Country, State, City).<br>
-               - Further levels: Demographic factors (e.g., Age, Gender, Occupation, Income).<br>
-               - Store historical population data within the Trie structure.
-            </p>
-            <p><strong>Hashing:</strong><br>
-               - Use a hash table to map demographic factors (keys) to their corresponding population statistics (values).<br>
-               - Enables quick lookups for specific demographic groups.
-            </p>
-            <h3>Implementation Benefits:</h3>
-            <ul>
-                <li>Efficient data retrieval: Quickly access historical population data for specific regions and demographics.</li>
-                <li>Accurate forecasting: Utilize historical data to predict future population trends based on various factors.</li>
-                <li>Targeted interventions: Design and implement population-specific policies and programs (e.g., healthcare, education).</li>
-            </ul>
-            <h2>2. Resource Allocation using Greedy Technique and Dijkstra's Algorithm</h2>
-            <p><h3>Idea:</h3> Optimize the allocation of resources (e.g., healthcare, education, infrastructure) across a population to maximize efficiency and minimize inequalities.</p>
-            <h3>Description:</h3>
-            <p><strong>Graph Construction:</strong><br>
-               - Nodes: Represent population centers (e.g., cities, towns).<br>
-               - Edges: Represent connections between centers, weighted by factors like distance, population density, and resource demand.
-            </p>
-            <p><strong>Dijkstra's Algorithm:</strong><br>
-               - Determine the most efficient routes for resource delivery (e.g., ambulances, school buses).
-            </p>
-            <p><strong>Greedy Technique:</strong><br>
-               - Prioritize resource allocation to areas with the highest need (e.g., areas with high infant mortality rates, low literacy rates).
-            </p>
-            <h3>Implementation Benefits:</h3>
-            <ul>
-                <li>Improved resource utilization: Ensure resources reach those who need them most efficiently.</li>
-                <li>Reduced inequality: Minimize disparities in access to essential services across the population.</li>
-                <li>Cost-effectiveness: Optimize resource allocation to maximize impact with limited budgets.</li>
-            </ul>
-            <h2>3. Healthcare Optimization using Dynamic Programming (DP)</h2>
-            <p><h3>Idea:</h3> Optimize healthcare resource allocation and treatment plans for individuals and populations to improve health outcomes and reduce costs.</p>
-            <h3>Description:</h3>
-            <p><strong>DP Objective:</strong><br>
-               - Minimize healthcare costs (e.g., hospital stays, medication) while maximizing health outcomes (e.g., life expectancy, quality of life).
-            </p>
-            <p><strong>Implementation:</strong><br>
-               - Develop optimal treatment plans considering factors like patient health history, available resources, and treatment options.
-            </p>
-            <h3>Implementation Benefits:</h3>
-            <ul>
-                <li>Personalized treatment plans: Tailor healthcare interventions to individual patient needs.</li>
-                <li>Improved health outcomes: Achieve better health outcomes with optimized resource allocation.</li>
-                <li>Reduced healthcare costs: Minimize unnecessary expenses and improve cost-effectiveness.</li>
-            </ul>
-            <h2>4. Social Welfare Optimization using Backtracking</h2>
-            <p><h3>Idea:</h3> Design social welfare programs that maximize impact while ensuring equitable distribution of benefits across the population.</p>
-            <h3>Description:</h3>
-            <p><strong>Backtracking:</strong><br>
-               - Explore different program designs and eligibility criteria.<br>
-               - Backtrack and refine solutions to ensure they meet specific objectives (e.g., poverty reduction, social inclusion).
-            </p>
-            <h3>Implementation Benefits:</h3>
-            <ul>
-                <li>Targeted and effective programs: Design programs that effectively address specific social challenges.</li>
-                <li>Fair and equitable distribution: Ensure benefits reach the most vulnerable populations.</li>
-                <li>Improved social outcomes: Achieve positive social and economic outcomes for the population.</li>
-            </ul>
-            <h2>5. Epidemic Control using Lazy Propagation and Fenwick Tree</h2>
-            <p><h3>Idea:</h3> Monitor and control the spread of infectious diseases within a population using efficient data structures.</p>
-            <h3>Description:</h3>
-            <p><strong>Lazy Propagation:</strong><br>
-               - Update infection rates only when significant changes occur (e.g., new outbreaks, containment measures).
-            </p>
-            <p><strong>Fenwick Tree:</strong><br>
-               - Maintain cumulative infection data for regions to quickly identify hotspots and track disease spread.
-            </p>
-            <h3>Implementation Benefits:</h3>
-            <ul>
-                <li>Real-time monitoring: Track the spread of diseases in near real-time.</li>
-                <li>Targeted interventions: Quickly identify and respond to outbreaks in specific regions.</li>
-                <li>Improved disease control: Implement effective containment measures and minimize the impact of epidemics.</li>
-            </ul>
-        </div>
         <div class="container">
             <div class="section">
                 <h2>2.Ware Houses Management</h2>
