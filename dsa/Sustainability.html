@@ -117,36 +117,196 @@
 <body>
   <header>
     Mapping Business Use Cases to SDG 11 Targets and Indicators
-  </header>
-  <div class="container">
-    <div class="section">
-      <h2>Population Data Management</h2>
-      <p><strong>Making Cities Smarter and Fairer</strong></p>
-      <p>
-        This idea uses smart technology to track how people live and move in cities. With tools like maps and AI,
-        city planners can see where more housing, schools, or parks are needed. It helps reduce overcrowding, plan
-        better neighborhoods, and make sure everyone has access to basic services.
-      </p>
-      <p>
-        For example, cities can use this data to build more affordable housing where it's needed most or improve
-        bus routes in busy areas.
-      </p>
+    </header>
+    <div class="container">
+        <!-- Target 11.3 -->
+        <div class="section">
+            <h2 style="text-align:left">1.Population Management</h2>
+            <h3>Target 11.1: Access to Adequate Housing and Basic Services</h3>
+            <p>Data will guide the construction of affordable housing in high-demand areas to ensure everyone has access to basic services.</p>
+            <div class="indicator">
+                <h3>Indicators:</h3>
+                <ul>
+                    <li>11.1.1: Proportion of urban population living in slums, informal settlements, or inadequate housing.</li>
+                    <li>11.1.2: Percentage of population with access to clean water and sanitation.</li>
+                    <li>11.1.3: Percentage of population with access to electricity and other basic services (e.g., waste management).</li>
+                </ul>
+            </div>
+            <h3>Target 11.2: Provide Access to Sustainable Transport Systems</h3>
+            <p>Skyline will optimize public transport routes based on population data, reducing overcrowding and improving accessibility.</p>
+            <div class="indicator">
+                <h3>Indicators:</h3>
+                <ul>
+                    <li>11.2.1: Proportion of population with convenient access to public transport by age, sex, and persons with disabilities.</li>
+                    <li>11.2.2: Proportion of population using sustainable transport modes (e.g., walking, cycling, electric buses).</li>
+                    <li>11.2.3: Number of sustainable transport projects initiated per year.</li>
+                </ul>
+            </div>
+            <h3>Target 11.3: Inclusive and Sustainable Urbanization</h3>
+            <p>Skyline will use AI and smart technology to track population movement and identify areas needing more housing, schools, and parks, improving urban planning.</p>
+            <div class="indicator">
+                <h3>Indicators:</h3>
+                <ul>
+                    <li>11.3.1: Ratio of land consumption rate to population growth rate.</li>
+                    <li>11.3.2: Proportion of cities with a direct participation structure of civil society in urban planning.</li>
+                    <li>11.3.3: Percentage of population living in adequately planned urban areas.</li>
+                </ul>
+            </div>
+            <button onclick="window.location.href='#'" style="background-color:#009688; color:white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Learn More</button>
+        </div>
     </div>
+    <div class="container">
+        <!-- Target 11.6 -->
+        <div class="section">
+            <h2 style="text-align:left">2.Ware Houses</h2>
+            <h3>Target 11.1: Access to Adequate Housing and Basic Services (Indirect)</h3>
+            <p>Eco-friendly warehouses will contribute to more efficient urban planning, making sure that goods are delivered in a timely manner, reducing delays and improving access to essential products and services.</p>
+            <div class="indicator">
+                <h3>Indicators:</h3>
+                <ul>
+                    <li>11.1.1: Proportion of the population with convenient access to essential goods due to optimized logistics.</li>
+                    <li>11.1.2: Improvement in delivery times to underserved or congested urban areas.</li>
+                </ul>
+            </div>
+            <h3>Target 11.2: Provide Access to Sustainable Transport Systems (Indirect)</h3>
+            <p>Skyline will place eco-friendly warehouses closer to urban centers, reducing the need for long-distance deliveries and improving the efficiency of public and private transport systems.</p>
+            <div class="indicator">
+                <h3>Indicators:</h3>
+                <ul>
+                    <li>11.2.1: Proportion of population with convenient access to sustainable transport systems (e.g., electric delivery trucks).</li>
+                    <li>11.2.2: Increase in the number of sustainable transport vehicles used for deliveries (e.g., electric or hybrid trucks).</li>
+                    <li>11.2.3: Reduction in traffic congestion due to optimized warehouse locations.</li>
+                </ul>
+            </div>
+            <h3>Target 11.6: Reduce Environmental Impact of Cities</h3>
+            <p>Skyline will implement eco-friendly warehousing practices by integrating solar power, smart cooling, and waste reduction techniques, contributing to reduced energy consumption and waste in urban areas.</p>
+            <div class="indicator">
+                <h3>Indicators:</h3>
+                <ul>
+                    <li>11.6.1: Proportion of urban solid waste regularly collected and with adequate final discharge.</li>
+                    <li>11.6.2: Annual mean levels of fine particulate matter (PM2.5 and PM10) in cities (reduced due to efficient transportation and green warehouses).</li>
+                    <li>11.6.3: Percentage reduction in carbon emissions from warehousing and logistics operations.</li>
+                </ul>
+            </div>
+        </div>
 
-    <div class="section">
-      <h2>Sustainable Warehousing</h2>
-      <p><strong>Eco-Friendly Storage and Delivery</strong></p>
-      <p>
-        This idea focuses on making warehouses greener and more efficient. Warehouses can use solar power, smart
-        cooling systems, and automated machines to save energy and reduce waste.
-      </p>
-      <p>
-        By placing these warehouses closer to the people who need their products, delivery trucks can travel shorter
-        distances, cutting down on pollution and traffic. This helps cities stay cleaner and less crowded while making
-        sure products get to people faster.
-      </p>
     </div>
-  </div>
+    <div class="container">
+        <!-- Population Forecasting -->
+        <div class="section">
+            <h2>1. Population Forecasting using Trie and Hashing</h2>
+            <p><h3>Idea:</h3> Predict future population trends in specific regions by analyzing demographic data efficiently.</p>
+            <h3>Description:</h3>
+            <p><strong>Trie Structure:</strong><br>
+               - Root node: "Population Data."<br>
+               - Child nodes: Regions (e.g., Country, State, City).<br>
+               - Further levels: Demographic factors (e.g., Age, Gender, Occupation, Income).<br>
+               - Store historical population data within the Trie structure.
+            </p>
+            <p><strong>Hashing:</strong><br>
+               - Use a hash table to map demographic factors (keys) to their corresponding population statistics (values).<br>
+               - Enables quick lookups for specific demographic groups.
+            </p>
+            <h3>Implementation Benefits:</h3>
+            <ul>
+                <li>Efficient data retrieval: Quickly access historical population data for specific regions and demographics.</li>
+                <li>Accurate forecasting: Utilize historical data to predict future population trends based on various factors.</li>
+                <li>Targeted interventions: Design and implement population-specific policies and programs (e.g., healthcare, education).</li>
+            </ul>
+            <h2>2. Resource Allocation using Greedy Technique and Dijkstra's Algorithm</h2>
+            <p><h3>Idea:</h3> Optimize the allocation of resources (e.g., healthcare, education, infrastructure) across a population to maximize efficiency and minimize inequalities.</p>
+            <h3>Description:</h3>
+            <p><strong>Graph Construction:</strong><br>
+               - Nodes: Represent population centers (e.g., cities, towns).<br>
+               - Edges: Represent connections between centers, weighted by factors like distance, population density, and resource demand.
+            </p>
+            <p><strong>Dijkstra's Algorithm:</strong><br>
+               - Determine the most efficient routes for resource delivery (e.g., ambulances, school buses).
+            </p>
+            <p><strong>Greedy Technique:</strong><br>
+               - Prioritize resource allocation to areas with the highest need (e.g., areas with high infant mortality rates, low literacy rates).
+            </p>
+            <h3>Implementation Benefits:</h3>
+            <ul>
+                <li>Improved resource utilization: Ensure resources reach those who need them most efficiently.</li>
+                <li>Reduced inequality: Minimize disparities in access to essential services across the population.</li>
+                <li>Cost-effectiveness: Optimize resource allocation to maximize impact with limited budgets.</li>
+            </ul>
+            <h2>3. Healthcare Optimization using Dynamic Programming (DP)</h2>
+            <p><h3>Idea:</h3> Optimize healthcare resource allocation and treatment plans for individuals and populations to improve health outcomes and reduce costs.</p>
+            <h3>Description:</h3>
+            <p><strong>DP Objective:</strong><br>
+               - Minimize healthcare costs (e.g., hospital stays, medication) while maximizing health outcomes (e.g., life expectancy, quality of life).
+            </p>
+            <p><strong>Implementation:</strong><br>
+               - Develop optimal treatment plans considering factors like patient health history, available resources, and treatment options.
+            </p>
+            <h3>Implementation Benefits:</h3>
+            <ul>
+                <li>Personalized treatment plans: Tailor healthcare interventions to individual patient needs.</li>
+                <li>Improved health outcomes: Achieve better health outcomes with optimized resource allocation.</li>
+                <li>Reduced healthcare costs: Minimize unnecessary expenses and improve cost-effectiveness.</li>
+            </ul>
+            <h2>4. Social Welfare Optimization using Backtracking</h2>
+            <p><h3>Idea:</h3> Design social welfare programs that maximize impact while ensuring equitable distribution of benefits across the population.</p>
+            <h3>Description:</h3>
+            <p><strong>Backtracking:</strong><br>
+               - Explore different program designs and eligibility criteria.<br>
+               - Backtrack and refine solutions to ensure they meet specific objectives (e.g., poverty reduction, social inclusion).
+            </p>
+            <h3>Implementation Benefits:</h3>
+            <ul>
+                <li>Targeted and effective programs: Design programs that effectively address specific social challenges.</li>
+                <li>Fair and equitable distribution: Ensure benefits reach the most vulnerable populations.</li>
+                <li>Improved social outcomes: Achieve positive social and economic outcomes for the population.</li>
+            </ul>
+            <h2>5. Epidemic Control using Lazy Propagation and Fenwick Tree</h2>
+            <p><h3>Idea:</h3> Monitor and control the spread of infectious diseases within a population using efficient data structures.</p>
+            <h3>Description:</h3>
+            <p><strong>Lazy Propagation:</strong><br>
+               - Update infection rates only when significant changes occur (e.g., new outbreaks, containment measures).
+            </p>
+            <p><strong>Fenwick Tree:</strong><br>
+               - Maintain cumulative infection data for regions to quickly identify hotspots and track disease spread.
+            </p>
+            <h3>Implementation Benefits:</h3>
+            <ul>
+                <li>Real-time monitoring: Track the spread of diseases in near real-time.</li>
+                <li>Targeted interventions: Quickly identify and respond to outbreaks in specific regions.</li>
+                <li>Improved disease control: Implement effective containment measures and minimize the impact of epidemics.</li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="section">
+                <h2>2.Ware Houses Management</h2>
+                <p><h3>Idea:</h3>Efficiently manage the movement and storage of goods within a warehouse using a combination of data structures and graph algorithms to optimize space utilization, minimize handling costs, and improve overall warehouse efficiency.</p>
+                <h3>Description:</h3>
+                <p><strong>Data Structures:</strong></p>
+                <ul>
+                    <li><strong>Graph:</strong> Represent the warehouse layout as a graph, where nodes represent storage locations (shelves, racks) and edges represent the paths between them. Edge weights can represent distances, travel time, or handling costs.</li>
+                    <li><strong>Priority Queue:</strong> Implement a priority queue to prioritize the storage of high-demand items in easily accessible locations. Prioritize items based on factors like order frequency, expiration dates, and value.</li>
+                    <li><strong>Hash Table:</strong> Use a hash table to quickly locate specific items within the warehouse based on their unique identifiers (e.g., product IDs, barcodes).</li>
+                    <li><strong>Tree:</strong> Organize items within storage locations using a tree structure (e.g., binary tree) to facilitate efficient searching and retrieval.</li>
+                </ul>
+                <p><strong>Algorithms:</strong></p>
+                <ul>
+                    <li><strong>Dijkstra's Algorithm:</strong> Determine the shortest paths between storage locations to optimize picking routes and minimize travel time for warehouse workers. This can be used to plan efficient routes for order fulfillment and inventory replenishment.</li>
+                    <li><strong>A* Search:</strong> Find the most efficient paths for picking multiple items simultaneously, considering factors like distance and item priority. This can be used to optimize batch picking and improve order fulfillment speed.</li>
+                    <li><strong>Greedy Algorithm:</strong> Prioritize the storage of high-demand items in easily accessible locations (e.g., lower shelves, near loading docks) to minimize picking time. This can be used to optimize storage allocation and improve overall warehouse throughput.</li>
+                </ul>
+                <h2>Implementation Benefits:</h2>
+                <ul>
+                    <li><strong>Optimized Space Utilization:</strong> Efficiently utilize available storage space by strategically placing items based on demand and accessibility.</li>
+                    <li><strong>Reduced Picking Times:</strong> Minimize the time required to locate and retrieve items, improving order fulfillment speed and customer satisfaction.</li>
+                    <li><strong>Minimized Handling Costs:</strong> Reduce the number of times items are handled, minimizing the risk of damage and lowering labor costs.</li>
+                    <li><strong>Improved Inventory Accuracy:</strong> Enhance inventory tracking and reduce the risk of stockouts or overstocking.</li>
+                    <li><strong>Enhanced Warehouse Safety:</strong> Improve worker safety by optimizing picking routes and minimizing the risk of accidents.</li>
+                </ul>
+                <h3>Example:</h3>
+                <p>A warehouse manager can use Dijkstra's Algorithm to determine the shortest path for a worker to pick three specific items from different locations within the warehouse. The system can then use a greedy algorithm to prioritize the storage of fast-moving items in easily accessible locations near the shipping dock. A hash table can be used to quickly locate specific items based on their unique identifiers, enabling efficient order fulfillment.</p>
+            </div>
+        </div>
+    </div>
   <div class ="container">
     <div class="section">
   <h2>Merge Sort</h2>
